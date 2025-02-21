@@ -22,7 +22,7 @@ const ContactForm = () => {
     return (
         <div className="bg-red-600 text-white p-8 rounded-xl">
             <h2 className="text-3xl font-semibold">Book a Free Consultation</h2>
-            <p className="italic text-sm mb-6"> // Reach out today and take the first step towards an unforgettable experience.</p>
+            <p className="italic text-sm mb-6">{" // Reach out today and take the first step towards an unforgettable experience."}</p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name & Email */}

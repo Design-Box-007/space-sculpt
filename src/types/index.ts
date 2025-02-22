@@ -22,10 +22,18 @@ interface Project {
     icon: string;
 }
 
+interface Testimonial {
+    testimonial: string;
+    testimonee: string;
+    imgSrc: string;
+    bgImage: string;
+};
+
 
 export type {
     Assets,
     NavbarLinks,
     Project,
-    SocialMediaLinks
+    SocialMediaLinks,
+    Testimonial,
 }

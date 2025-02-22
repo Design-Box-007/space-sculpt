@@ -21,7 +21,18 @@ const assets: Assets = {
     home: "/images/projects/home-icon.svg",
     laser: "/images/projects/laser.svg",
     signboard: "/images/projects/signboard.svg",
-    sofa: "/images/projects/sofa.svg"
+    sofa: "/images/projects/sofa.svg",
+
+
+    // testimonials
+    testimonial1: "/images/testimonial-1.png",
+    testimonial2: "/images/testimonial-2.png",
+    testimonial3: "/images/testimonial-3.png",
+    testimonial4: "/images/testimonial-4.png",
+
+    // testimonee
+
+    testimonee1: "/images/testimonee1.png",
 }
 
 export default assets;

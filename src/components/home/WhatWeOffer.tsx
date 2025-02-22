@@ -26,7 +26,7 @@ const ProjectCard: React.FC<Project> = ({ imgSrc, title, link = '/', icon }) => 
 const WhatWeOffer = () => {
     return (
         <section className="py-10 px-4">
-            <h1 className="text-[180px] leading-[243px] font-medium text-left">What We Offer</h1>
+            <h1 className="text-8xl font-medium text-left">What We Offer</h1>
             <h5 className="text-[40px] leading-[54px] text-gray-600 text-left mt-2">
                 Comprehensive Interior Solutions for <span className='text-primary'>Every Space.</span>
             </h5>

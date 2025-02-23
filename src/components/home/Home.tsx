@@ -4,6 +4,7 @@ import About from './About'
 import WhatWeOffer from './WhatWeOffer'
 import Contact from '../comman/Contact'
 import Testimonials from './Testimonials'
+import BlurrySlider from './BlurrySlider'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <About />
       <WhatWeOffer />
+      <BlurrySlider />
       <Testimonials />
       <Contact />
     </section>

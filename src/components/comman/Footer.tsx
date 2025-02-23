@@ -66,7 +66,7 @@ const Footer = () => {
 
       <div className='h-[451px] max-h-[451px] relative overflow-hidden rounded-t-3xl flex flex-col items-center justify-center'>
         <Image src={assets.FooterImage} loading='lazy' alt='footer-image' width={1366} height={614} className='h-full w-full absolute top-0 right-0 left-0 z-10 object-cover brightness-[.8]' />
-        <h1 className='font-medium text-[206px] leading-[300px] relative z-20 text-white text-center'>Space Sculpt</h1>
+        <h1 className='font-medium text-[16vw] leading-[300px] relative z-20 text-white text-center'>Space Sculpt</h1>
       </div>
 
       {/* bottom */}

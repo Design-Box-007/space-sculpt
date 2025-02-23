@@ -1,0 +1,18 @@
+import React from 'react'
+import AboutHero from './AboutHero'
+import Contact from '../comman/Contact'
+import AboutSecond from './AboutSecond'
+import AboutThird from './AboutThird'
+
+const AboutUs = () => {
+    return (
+        <section className='p-[10px]'>
+            <AboutHero />
+            <AboutSecond />
+            <AboutThird />
+            <Contact />
+        </section>
+    )
+}
+
+export default AboutUs

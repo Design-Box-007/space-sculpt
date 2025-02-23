@@ -6,15 +6,20 @@ import assets from "@/data/assets";
 import { NavbarLinks } from "@/types";
 import Link from "next/link";
 import { navLinks } from "@/data/comman";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const pathname = usePathname();
+
+    const NavbarBackgroundImage = navLinks.find((link) => link.link === pathname)?.bgImage as string;
 
 
     return (
         <nav className="absolute top-0 left-1/2 border-[10px] border-solid rounded-b-3xl bg-white border-white transform -translate-x-1/2 w-4/5 z-50">
             <section className="flex items-center justify-between p-[10px] rounded-full relative overflow-hidden">
-                <Image loading="eager" src={assets.HomeHeroImage} width={1153} height={641} alt="bg" className="-z-10 w-full absolute brightness-[0.7] top-0 right-0 left-0 object-cover" />
+                <Image loading="eager" src={NavbarBackgroundImage} width={1153} height={641} alt="bg" className="-z-10 w-full absolute brightness-[0.7] top-0 right-0 left-0 object-cover" />
                 {/* Logo */}
                 <div className="text-xl font-bold text-white flex flex-row items-center gap-2">
                     <Image

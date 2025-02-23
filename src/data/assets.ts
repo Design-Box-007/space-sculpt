@@ -33,6 +33,13 @@ const assets: Assets = {
     // testimonee
 
     testimonee1: "/images/testimonee1.png",
+
+    // about us
+
+    aboutHero: "/images/abouthero.png",
+    about2: "/images/about2.png",
+    divider: "/images/divider.png"
+
 }
 
 export default assets;

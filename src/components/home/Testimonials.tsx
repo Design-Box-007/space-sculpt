@@ -26,14 +26,15 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
 
                 >
 
-                    <div className='bg-white p-[18px] rounded-[18px] flex flex-col justify-between lg:min-h-[280px]'>
+                    <div className='bg-[#D8D8D833] backdrop-blur-[30px] p-[18px] rounded-[18px] flex flex-col justify-between lg:min-h-[280px]'>
                         <div className='space-y-4'>
                             <FaQuoteRight
                                 size={24}
                                 className="fill-none stroke-red-500 stroke-[30]"
                             />
 
-                            <p className="text-gray-700 text-2xl font-medium italic">{item.testimonial}</p>
+
+                            <p className="text-white text-2xl font-medium italic">{item.testimonial}</p>
                         </div>
 
                         <div className='flex flex-row gap-4 justify-start items-center'>
@@ -45,7 +46,7 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
                                 className="rounded-full object-cover"
                                 loading='lazy'
                             />
-                            <h4 className="text-primary text-[22px] leading-[29px] font-bold">{item.testimonee}</h4>
+                            <h4 className="text-white text-[22px] leading-[29px] font-bold">{item.testimonee}</h4>
                         </div>
                     </div>
                 </div>

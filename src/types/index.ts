@@ -7,6 +7,7 @@ interface Assets {
 interface NavbarLinks {
     title: string;
     link: string;
+    bgImage:string;
 }
 
 interface SocialMediaLinks {
@@ -14,6 +15,10 @@ interface SocialMediaLinks {
     icon: IconType;
 }
 
+interface AboutUsPageData{
+    title:string;
+    content:string;
+}
 
 interface Project {
     imgSrc: string;
@@ -36,4 +41,5 @@ export type {
     Project,
     SocialMediaLinks,
     Testimonial,
+    AboutUsPageData,
 }

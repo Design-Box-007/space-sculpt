@@ -8,7 +8,7 @@ import React from 'react';
 const ProjectCard: React.FC<Project> = ({ imgSrc, title, link = '/', icon }) => {
     return (
         <div className="h-[445px] rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative">
-            <Image src={imgSrc} width={445} height={445} alt={title} className="rounded-xl object-cover w-full h-full" />
+            <Image loading='lazy' src={imgSrc} width={445} height={445} alt={title} className="rounded-xl object-cover w-full h-full" />
 
             <Link href={link} passHref>
                 <div className="bg-white w-[95%] mx-auto rounded-full px-4 py-3 z-20 flex justify-between items-center mt-4 absolute bottom-3 left-0 right-0">

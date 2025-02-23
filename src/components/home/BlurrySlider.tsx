@@ -43,6 +43,7 @@ const BlurrySlider = () => {
                                 width={1360}
                                 height={500}
                                 className="w-full h-full object-cover blur-lg"
+                                loading='lazy'
                             />
                         </motion.div>
                     </AnimatePresence>
@@ -64,6 +65,7 @@ const BlurrySlider = () => {
                                     width={1360}
                                     height={500}
                                     className="w-full h-full object-cover rounded-3xl"
+                                    loading='lazy'
                                 />
                             </motion.div>
                         </AnimatePresence>

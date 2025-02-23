@@ -24,7 +24,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Image src={assets.HomeAboutImage} alt='about' width={961} height={641} className='w-full h-[500px] rounded-2xl object-cover' />
+            <Image loading='lazy' src={assets.HomeAboutImage} alt='about' width={961} height={641} className='w-full h-[500px] rounded-2xl object-cover' />
         </section>
     )
 }

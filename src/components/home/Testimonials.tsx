@@ -43,6 +43,7 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
                                 width={32}
                                 height={32}
                                 className="rounded-full object-cover"
+                                loading='lazy'
                             />
                             <h4 className="text-primary text-[22px] leading-[29px] font-bold">{item.testimonee}</h4>
                         </div>

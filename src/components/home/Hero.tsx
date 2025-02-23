@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 const Hero = () => {
   return (
     <section className='text-bold text-white w-full flex flex-col justify-end relative rounded-xl overflow-hidden h-screen p-8'>
-      <Image src={assets.HomeHeroImage} width={1153} height={641} alt="bg" className="-z-10 rounded-3xl absolute w-full brightness-[0.7] top-0 right-0 left-0 object-cover" />
+      <Image loading='eager' src={assets.HomeHeroImage} width={1153} height={641} alt="bg" className="-z-10 rounded-3xl absolute w-full brightness-[0.7] top-0 right-0 left-0 object-cover" />
 
       <div className='text-left flex flex-col gap-4'>
         <h1 className='text-8xl text-white font-medium'>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const ServiceCard: React.FC<Omit<Service, 'description'>> = ({ imgSrc, title, icon }) => {
+const ServiceCard: React.FC<Omit<Service, 'description' | 'id'>> = ({ imgSrc, title, icon }) => {
     return (
         <div className="h-[445px] rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative">
             <Image loading='lazy' src={imgSrc} width={445} height={445} alt={title} className="rounded-xl object-cover w-full h-full" />

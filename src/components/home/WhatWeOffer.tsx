@@ -1,16 +1,17 @@
-import projects from '@/data/projects';
-import { Project } from '@/types';
+import services from '@/data/services';
+import { Service } from '@/types';
+import formatToHyphenated from '@/utils/formatPathName';
 import { ArrowRightCircle } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const ProjectCard: React.FC<Project> = ({ imgSrc, title, link = '/', icon }) => {
+const ServiceCard: React.FC<Omit<Service, 'description'>> = ({ imgSrc, title, icon }) => {
     return (
         <div className="h-[445px] rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative">
             <Image loading='lazy' src={imgSrc} width={445} height={445} alt={title} className="rounded-xl object-cover w-full h-full" />
 
-            <Link href={link} passHref>
+            <Link href={`/services/${formatToHyphenated(title)}`} passHref>
                 <div className="bg-white w-[95%] mx-auto rounded-full px-4 py-3 z-20 flex justify-between items-center mt-4 absolute bottom-3 left-0 right-0">
                     <div className="flex items-center gap-2">
                         <Image src={icon} width={20} height={20} alt={title} />
@@ -31,12 +32,11 @@ const WhatWeOffer = () => {
                 Comprehensive Interior Solutions for <span className='text-primary'>Every Space.</span>
             </h5>
             <div className="grid grid-cols-3 gap-6 mt-8">
-                {projects.map((project: Project, index: number) => (
-                    <ProjectCard
+                {services.map((project: Service, index: number) => (
+                    <ServiceCard
                         icon={project.icon}
                         imgSrc={project.imgSrc}
                         key={index}
-                        link={project.link}
                         title={project.title}
                     />
                 ))}

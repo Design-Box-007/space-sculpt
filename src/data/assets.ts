@@ -38,7 +38,18 @@ const assets: Assets = {
 
     aboutHero: "/images/abouthero.png",
     about2: "/images/about2.png",
-    divider: "/images/divider.png"
+    divider: "/images/divider.png",
+
+    // services
+
+    servicesHero: "/images/servicesHero.png",
+
+    // gallery images
+    classicRenovation: "/images/gallery/classic-renovation.png",
+    customSignage: "/images/gallery/custom-signage.png",
+    minimalisticOfficeMakeover: "/images/gallery/minimalistic-office-makeover.png",
+    conceptSketches: "/images/gallery/concept-sketches.png",
+    intricateCncLaserTech: "/images/gallery/intricate-cnc-laser-tech.png",
 
 }
 

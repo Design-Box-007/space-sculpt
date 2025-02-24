@@ -7,7 +7,7 @@ interface Assets {
 interface NavbarLinks {
     title: string;
     link: string;
-    bgImage:string;
+    bgImage: string;
 }
 
 interface SocialMediaLinks {
@@ -15,16 +15,16 @@ interface SocialMediaLinks {
     icon: IconType;
 }
 
-interface AboutUsPageData{
-    title:string;
-    content:string;
+interface AboutUsPageData {
+    title: string;
+    content: string;
 }
 
-interface Project {
+interface Service {
     imgSrc: string;
     title: string;
-    link: string;
     icon: string;
+    description: string
 }
 
 interface Testimonial {
@@ -34,12 +34,21 @@ interface Testimonial {
     bgImage: string;
 };
 
+interface Gallery {
+    title: string;
+    imgSrc: string;
+    icon: string;
+    contentTitle:string;
+    content: string;
+}
+
 
 export type {
     Assets,
     NavbarLinks,
-    Project,
+    Service,
     SocialMediaLinks,
     Testimonial,
     AboutUsPageData,
+    Gallery,
 }

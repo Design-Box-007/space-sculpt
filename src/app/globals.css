@@ -19,6 +19,8 @@
 
 body {
     font-family: var(--font-satoshi);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* add the code bellow */

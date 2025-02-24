@@ -58,7 +58,7 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
 const Testimonials = () => {
 
     return (
-        <section className='px-4'>
+        <section className='px-4 py-20'>
             <div className='flex flex-col lg:flex-row'>
                 <div className='w-full lg:w-3/4 flex flex-col justify-between'>
                     <h1 className='text-8xl text-black font-medium'>

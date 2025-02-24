@@ -45,11 +45,17 @@ const assets: Assets = {
     servicesHero: "/images/servicesHero.png",
 
     // gallery images
+    galleryHero: "/images/galleryHeroImage.png",
     classicRenovation: "/images/gallery/classic-renovation.png",
     customSignage: "/images/gallery/custom-signage.png",
     minimalisticOfficeMakeover: "/images/gallery/minimalistic-office-makeover.png",
     conceptSketches: "/images/gallery/concept-sketches.png",
     intricateCncLaserTech: "/images/gallery/intricate-cnc-laser-tech.png",
+
+    // contact us 
+
+    contactHero1: "/images/contactusHero1.png",
+    contactHero2: "/images/contactusHero2.png"
 
 }
 

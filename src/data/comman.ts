@@ -6,9 +6,9 @@ import assets from "./assets";
 const navLinks: NavbarLinks[] = [
     { title: "Home", link: "/", bgImage: assets.HomeHeroImage },
     { title: "About Us", link: "/about", bgImage: assets.aboutHero },
-    { title: "Services", link: "/services", bgImage: assets.HomeHeroImage },
-    { title: "Gallery", link: "/gallery", bgImage: assets.HomeHeroImage },
-    { title: "Contact", link: "/contact", bgImage: assets.HomeHeroImage },
+    { title: "Services", link: "/services", bgImage: assets.servicesHero },
+    { title: "Gallery", link: "/gallery", bgImage: assets.galleryHero },
+    { title: "Contact", link: "/contact", bgImage: assets.contactHero1 },
 ];
 
 const socialMedia: SocialMediaLinks[] = [
@@ -46,6 +46,11 @@ const aboutUsPageData: AboutUsPageData[] = [
     }
 ];
 
+const contactUsEmail: string = "Riyaz@spacesculpt.ae";
+const contactUsPhoneNumber: string = "+971 508 89 2829";
+const contactUsAddress: string = "177, Red Avenue, Al Garhoud, Dubai-UAE";
+const contactUsAddressLink:string="https://maps.app.goo.gl/NFFgWUMxdULSk4Pa6";
 
 
-export { navLinks, socialMedia, aboutUsPageData }
+
+export { navLinks, socialMedia, aboutUsPageData, contactUsAddress, contactUsEmail,contactUsAddressLink, contactUsPhoneNumber }

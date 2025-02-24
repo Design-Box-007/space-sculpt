@@ -1,5 +1,5 @@
 import assets from '@/data/assets'
-import { navLinks, socialMedia } from '@/data/comman'
+import { contactUsEmail, navLinks, socialMedia } from '@/data/comman'
 import { NavbarLinks, SocialMediaLinks } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -55,11 +55,16 @@ const Footer = () => {
 
         </div>
         {/* middle */}
-        <div className='w-full flex flex-row justify-between'>
+        <div className='w-full flex flex-row justify-between capitalize'>
           <p className='text-sm font-normal text-white capitalize'>terms & conditions</p>
+
+
+          <p className='text-sm font-normal text-white'>For inquiries, email us at <a href={`mailto:${contactUsEmail.toLowerCase()}`} target='_blank' className="mt-2 lowercase font-bold">{contactUsEmail}</a>
+          </p>
+
           <div className='space-x-4'>
             <span className='text-sm font-normal text-white capitalize'>services</span>
-            <span className='text-sm font-normal text-white capitalize'>privacy policy</span>
+            <span className='text-sm font-normal text-white capitalize'>Privacy policy</span>
           </div>
         </div>
       </div>

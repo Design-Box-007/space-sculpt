@@ -21,6 +21,7 @@ interface AboutUsPageData {
 }
 
 interface Service {
+    id:string;
     imgSrc: string;
     title: string;
     icon: string;
@@ -40,6 +41,7 @@ interface Gallery {
     icon: string;
     contentTitle:string;
     content: string;
+    serviceId:string;
 }
 
 

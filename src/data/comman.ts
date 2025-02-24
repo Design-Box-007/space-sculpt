@@ -8,6 +8,7 @@ const navLinks: NavbarLinks[] = [
     { title: "About Us", link: "/about", bgImage: assets.aboutHero },
     { title: "Services", link: "/services", bgImage: assets.servicesHero },
     { title: "Gallery", link: "/gallery", bgImage: assets.galleryHero },
+    { title: "Blogs", link: "/blogs", bgImage: assets.blogsHeroImage },
     { title: "Contact", link: "/contact", bgImage: assets.contactHero1 },
 ];
 

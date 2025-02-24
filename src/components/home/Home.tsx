@@ -18,6 +18,7 @@ const Home = () => {
         ctaName="Get Free Consultation"
         ctaLink="/contact"
         bgImage={assets.HomeHeroImage}
+        ctaStatus={true}
       />
 
       <About />

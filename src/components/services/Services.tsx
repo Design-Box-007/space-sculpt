@@ -15,6 +15,7 @@ const Services = () => {
                 ctaLink='/contact'
                 ctaName='Get Free Consultations'
                 bgImage={assets.servicesHero}
+                ctaStatus={true}
             />
             <ServicesGrid />
             <ServiceGalleryGrid />

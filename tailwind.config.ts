@@ -10,9 +10,12 @@ export default {
     extend: {
       colors: {
         primary: "#D72638",
-        secondary:"#222222"
-        
+        secondary: "#222222"
+
       },
+      fontFamily: {
+        poppins: "var(--font-poppins)"
+      }
     },
   },
   plugins: [],

@@ -55,8 +55,24 @@ const assets: Assets = {
     // contact us 
 
     contactHero1: "/images/contactusHero1.png",
-    contactHero2: "/images/contactusHero2.png"
+    contactHero2: "/images/contactusHero2.png",
 
+    // blogspage
+
+    blogsHeroImage: "/images/blogsHeroImage.png",
+
+
+    // blogs 
+
+    Blog1: "/images/blogs/blog1.jpeg",
+    Blog2: "/images/blogs/blog2.jpeg",
+    Blog3: "/images/blogs/blog3.jpeg",
+    Blog4: "/images/blogs/blog4.jpeg",
+    Blog5: "/images/blogs/blog5.jpeg",
+    Blog6: "/images/blogs/blog6.jpeg",
+    Blog7: "/images/blogs/blog7.jpeg",
+    Blog8: "/images/blogs/blog8.jpeg",
+    Blog9: "/images/blogs/blog9.jpeg",
 }
 
 export default assets;

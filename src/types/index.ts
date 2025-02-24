@@ -21,7 +21,7 @@ interface AboutUsPageData {
 }
 
 interface Service {
-    id:string;
+    id: string;
     imgSrc: string;
     title: string;
     icon: string;
@@ -39,9 +39,18 @@ interface Gallery {
     title: string;
     imgSrc: string;
     icon: string;
-    contentTitle:string;
+    contentTitle: string;
     content: string;
-    serviceId:string;
+    serviceId: string;
+}
+
+
+
+interface Blog {
+    title: string;
+    description: string;
+    imgSrc: string;
+    // component: React.FC;
 }
 
 
@@ -53,4 +62,5 @@ export type {
     Testimonial,
     AboutUsPageData,
     Gallery,
+    Blog,
 }

@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
 import Footer from "@/components/comman/Footer";
+import { ToastContainer, Zoom } from "react-toastify";
 
 
 export const metadata: Metadata = {
@@ -28,6 +29,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable}`}>
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Zoom}
+        />
         <Navbar />
         {children}
         <Footer />

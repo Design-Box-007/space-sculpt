@@ -1,114 +1,129 @@
 "use client";
+
+import { sendEmail } from "@/actions/sendEmail";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+
+// Validation schema
+const formSchema = z.object({
+    name: z.string().min(1, "Name is required"),
+    email: z.string().email("Invalid email address"),
+    mobile: z.string().regex(/^\d+$/, "Mobile number must be a number"),
+    location: z.string().min(1, "Location is required"),
+    message: z.string().min(1, "Message is required"),
+});
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        mobile: "",
-        location: "",
-        message: "",
+    const [loading, setLoading] = useState(false);
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm({
+        resolver: zodResolver(formSchema),
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    const onSubmit = async (formData: any) => {
+        setLoading(true);
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log("Form Data Submitted:", formData);
+        const res = await sendEmail(formData);
+
+        if (res.success) {
+            toast.success("Message sent successfully!");
+            setTimeout(() => window.location.reload(), 2000);
+        } else {
+            toast.error("Failed to send email. Try again.");
+        }
+
+        setLoading(false);
     };
 
     return (
         <div className="bg-red-600 text-white p-8 rounded-xl">
             <h2 className="text-3xl font-semibold">Book a Free Consultation</h2>
-            <p className="italic text-sm mb-6">{" // Reach out today and take the first step towards an unforgettable experience."}</p>
+            <p className="italic text-sm mb-6">
+                {"// Reach out today and take the first step towards an unforgettable experience."}
+            </p>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 {/* Name & Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* Name */}
                     <div className="relative z-0 w-full">
                         <input
                             type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white"
+                            {...register("name")}
+                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:ring-0 focus:border-white"
                             placeholder=" "
                         />
-                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                             Name
                         </label>
+                        {errors.name && <p className="text-yellow-300 text-xs">{errors.name.message}</p>}
                     </div>
 
                     {/* Email */}
                     <div className="relative z-0 w-full">
                         <input
                             type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white"
+                            {...register("email")}
+                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:ring-0 focus:border-white"
                             placeholder=" "
                         />
-                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                             Email
                         </label>
+                        {errors.email && <p className="text-yellow-300 text-xs">{errors.email.message}</p>}
                     </div>
                 </div>
 
                 {/* Mobile & Location */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* Mobile No */}
+                    {/* Mobile */}
                     <div className="relative z-0 w-full">
                         <input
                             type="text"
-                            name="mobile"
-                            value={formData.mobile}
-                            onChange={handleChange}
-                            required
-                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white"
+                            {...register("mobile")}
+                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:ring-0 focus:border-white"
                             placeholder=" "
                         />
-                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                             Mobile No
                         </label>
+                        {errors.mobile && <p className="text-yellow-300 text-xs">{errors.mobile.message}</p>}
                     </div>
 
                     {/* Location */}
                     <div className="relative z-0 w-full">
                         <input
                             type="text"
-                            name="location"
-                            value={formData.location}
-                            onChange={handleChange}
-                            required
-                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:border-white dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white"
+                            {...register("location")}
+                            className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:ring-0 focus:border-white"
                             placeholder=" "
                         />
-                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                        <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                             Location
                         </label>
+                        {errors.location && <p className="text-yellow-300 text-xs">{errors.location.message}</p>}
                     </div>
                 </div>
 
                 {/* Message */}
                 <div className="relative z-0 w-full">
                     <textarea
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none focus:ring-0 focus:border-white resize-none"
+                        {...register("message")}
+                        className="peer block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:ring-0 focus:border-white resize-none"
                         rows={3}
                         placeholder=" "
                     ></textarea>
-                    <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                    <label className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                         How can we help you?
                     </label>
+                    {errors.message && <p className="text-yellow-300 text-xs">{errors.message.message}</p>}
                 </div>
 
                 {/* Submit Button */}
@@ -116,12 +131,12 @@ const ContactForm = () => {
                     <button
                         type="submit"
                         className="w-full bg-white text-red-600 font-semibold py-3 rounded-lg hover:bg-gray-200 transition"
+                        disabled={loading}
                     >
-                        Submit
+                        {loading ? "Sending..." : "Submit"}
                     </button>
                 </div>
             </form>
-
         </div>
     );
 };

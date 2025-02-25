@@ -53,6 +53,14 @@ interface Blog {
     // component: React.FC;
 }
 
+interface ContactForm {
+    name: string;
+    email: string;
+    mobile: string;
+    location: string;
+    message: string;
+}
+
 
 export type {
     Assets,
@@ -63,4 +71,5 @@ export type {
     AboutUsPageData,
     Gallery,
     Blog,
+    ContactForm,
 }

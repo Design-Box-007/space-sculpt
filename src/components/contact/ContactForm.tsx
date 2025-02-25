@@ -46,7 +46,7 @@ const ContactForm = () => {
             toast.success("Form submitted successfully!");
             setFormData({ name: "", email: "", mobile: "", location: "", message: "" });
         } catch (error) {
-            toast.error("Something went wrong, please try again.");
+            toast.error("Something went wrong, please try again." + error);
         } finally {
             setLoading(false);
         }

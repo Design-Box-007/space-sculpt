@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { ContactForm as ContactFormType } from "@/types";
 
 // Validation schema
 const formSchema = z.object({
@@ -27,7 +28,7 @@ const ContactForm = () => {
         resolver: zodResolver(formSchema),
     });
 
-    const onSubmit = async (formData: any) => {
+    const onSubmit = async (formData: ContactFormType) => {
         setLoading(true);
 
         const res = await sendEmail(formData);

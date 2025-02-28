@@ -12,13 +12,13 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
 
     const toggleContent = (e: React.MouseEvent) => {
         e.stopPropagation(); // Prevent parent click event from triggering
-        setShowContent(!showContent);
+        setShowContent(prev => prev = !prev);
     };
 
     return (
         <div
             className="h-[640px] p-4 rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative cursor-pointer"
-            onClick={() => setShowContent(false)} // Clicking anywhere outside collapses
+        // onClick={() => setShowContent(false)} // Clicking anywhere outside collapses
         >
             {/* Background Image */}
             <Image
@@ -47,7 +47,8 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
                     opacity: { duration: 0.2, ease: "easeOut", delay: showContent ? 0 : 0.2 },
                 }}
                 className="z-30 overflow-hidden w-[95%] mx-auto absolute bottom-4 bg-white p-4 rounded-2xl mt-4 space-y-2"
-                 // Keeps content anchored at the bottom
+                // Keeps content anchored at the bottom
+                onClick={toggleContent}
             >
                 <motion.div
                     initial={{ opacity: 0 }}

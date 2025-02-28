@@ -27,11 +27,14 @@ const ServiceCard: React.FC<Omit<Service, 'description' | 'id'>> = ({ imgSrc, ti
 const WhatWeOffer = () => {
     return (
         <section className="py-10 px-4">
-            <h1 className="text-8xl font-medium text-left">What We Offer</h1>
-            <h5 className="text-[40px] leading-[54px] text-gray-600 text-left mt-2">
-                Comprehensive Interior Solutions for <span className='text-primary'>Every Space.</span>
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium text-left">
+                What We Offer
+            </h1>
+            <h5 className="text-xl md:text-3xl lg:text-[40px] leading-[32px] sm:leading-[42px] md:leading-[48px] lg:leading-[54px] text-gray-600 text-left mt-2">
+                Comprehensive Interior Solutions for <span className="text-primary">Every Space.</span>
             </h5>
-            <div className="grid grid-cols-3 gap-6 mt-8">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                 {services.map((project: Service, index: number) => (
                     <ServiceCard
                         icon={project.icon}

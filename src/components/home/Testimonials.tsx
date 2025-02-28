@@ -26,7 +26,7 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
 
                 >
 
-                    <div className='bg-[#D8D8D833] backdrop-blur-[30px] p-[18px] rounded-[18px] flex flex-col justify-between lg:min-h-[280px]'>
+                    <div className='bg-[#D8D8D833] backdrop-blur-[30px] p-[18px] rounded-[18px] flex flex-col gap-4 justify-between lg:min-h-[280px]'>
                         <div className='space-y-4'>
                             <FaQuoteRight
                                 size={24}
@@ -34,7 +34,7 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
                             />
 
 
-                            <p className="text-white text-2xl font-medium italic">{item.testimonial}</p>
+                            <p className="text-white text-base md:text-xl lg:text-2xl font-medium italic">{item.testimonial}</p>
                         </div>
 
                         <div className='flex flex-row gap-4 justify-start items-center'>
@@ -59,13 +59,13 @@ const Testimonials = () => {
 
     return (
         <section className='px-4 py-20'>
-            <div className='flex flex-col lg:flex-row'>
+            <div className='flex flex-col lg:flex-row gap-4'>
                 <div className='w-full lg:w-3/4 flex flex-col justify-between'>
-                    <h1 className='text-8xl text-black font-medium'>
+                    <h1 className='text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-black font-medium'>
                         What <span className='text-primary'>Our Clients</span>
                     </h1>
 
-                    <h3 className='text-[80px] leading-[108px]'>
+                    <h3 className='text-4xl sm:text-6xl md:text-7xl lg:text-[80px] leading-8 lg:leading-[108px]'>
                         Say About Us
                     </h3>
                 </div>

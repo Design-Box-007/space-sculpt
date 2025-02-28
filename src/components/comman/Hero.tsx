@@ -13,7 +13,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ heading, content, ctaName, ctaLink, ctaStatus = false, bgImage }) => {
     return (
-        <section className="text-bold text-white w-full flex flex-col justify-end relative rounded-xl overflow-hidden h-screen p-8">
+        <section className="text-white w-full flex flex-col justify-end relative rounded-xl overflow-hidden min-h-screen max-[500px]:pt-[100px] p-8 sm:p-6 md:p-10 lg:p-12">
             <Image
                 loading="eager"
                 src={bgImage}
@@ -23,23 +23,22 @@ const Hero: React.FC<HeroProps> = ({ heading, content, ctaName, ctaLink, ctaStat
                 className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.7] top-0 right-0 left-0 object-cover"
             />
 
-            <div className="text-left flex flex-col gap-8">
-                <h1 className="text-8xl text-white font-medium" dangerouslySetInnerHTML={{ __html: heading }} />
-
-                <p className="text-base font-medium text-white" dangerouslySetInnerHTML={{ __html: content }} />
+            <div className="text-left flex flex-col gap-6 sm:gap-4 md:gap-6 lg:gap-8">
+                <h1 className="text-6xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white font-medium" dangerouslySetInnerHTML={{ __html: heading }} />
+                <p className="text-sm sm:text-base md:text-lg font-medium text-white" dangerouslySetInnerHTML={{ __html: content }} />
 
                 {/* Conditionally render CTA button */}
                 {ctaStatus && ctaName && ctaLink && (
-                    <a href={ctaLink} className="flex gap-2 mt-12 w-fit bg-white flex-row-reverse items-center text-white p-[10px] rounded-full">
-                        <span className="bg-primary rounded-full p-1">
+                    <a href={ctaLink} className="flex gap-2 mt-8 sm:mt-6 md:mt-8 lg:mt-12 w-fit bg-white flex-row-reverse items-center text-white p-2 sm:p-3 md:p-4 rounded-full">
+                        <span className="bg-primary rounded-full p-1 sm:p-2">
                             <ArrowRight size={16} className="text-white" />
                         </span>
-                        <span className="text-secondary text-2xl font-medium">{ctaName}</span>
+                        <span className="text-secondary text-lg sm:text-xl md:text-2xl font-medium">{ctaName}</span>
                     </a>
                 )}
             </div>
 
-            <div className="text-lg w-[331px] text-left font-medium text-white border-b-primary border-b-2 border-solid absolute bottom-4 right-3">
+            <div className="hidden md:block sm:text-base md:text-lg sm:w-[250px] md:w-[300px] lg:w-[331px] text-left font-medium text-white border-b-primary border-b-2 border-solid absolute bottom-4 right-3">
                 Commercial Interior
             </div>
         </section>

@@ -18,14 +18,14 @@ const BlurrySlider = () => {
     ];
 
     return (
-        <section className="px-4 overflow-hidden flex flex-col justify-center min-h-[70vh]">
-            <h4 className="text-7xl font-medium mb-8">
+        <section className="px-4 md:px-8 lg:px-16 overflow-hidden flex flex-col justify-center min-h-[50vh]">
+            <h4 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 sm:mb-8 text-center md:text-left">
                 Our <span className="text-primary">Creations</span> Speak for Themselves
             </h4>
 
             {/* Image Container */}
-            <section className="flex justify-center items-center relative overflow-hidden rounded-3xl">
-                <div className="border-white flex justify-center items-center p-16 border-[3px] border-solid relative w-full h-full">
+            <section className="flex justify-center border border-solid border-primary items-center relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
+                <div className="border-white flex justify-center items-center p-6 sm:p-10 md:p-12 lg:p-16 border-[3px] border-solid relative w-full h-full">
 
                     {/* Blurred Background Image */}
                     <AnimatePresence mode="wait">
@@ -49,13 +49,13 @@ const BlurrySlider = () => {
                     </AnimatePresence>
 
                     {/* Clear Centered Image */}
-                    <div className="relative w-full h-full z-20 rounded-3xl border-white border-[3px] border-solid">
+                    <div className="relative w-full h-full z-20 rounded-xl sm:rounded-2xl md:rounded-3xl border-white border-[3px] border-solid">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={currentIndex}
                                 initial={{ opacity: 0, scale: 1.1 }}
                                 animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0.6, scale: 0.9 }} // ✅ Scales down instead of up
+                                exit={{ opacity: 0.6, scale: 0.9 }}
                                 transition={{ duration: 0.6 }}
                                 className="w-full h-full"
                             >
@@ -64,20 +64,18 @@ const BlurrySlider = () => {
                                     alt="gallery-image"
                                     width={1360}
                                     height={500}
-                                    className="w-full h-full object-cover rounded-3xl"
+                                    className="w-full h-full object-cover rounded-xl sm:rounded-2xl md:rounded-3xl"
                                     loading='lazy'
                                 />
                             </motion.div>
                         </AnimatePresence>
 
                         {/* Image Labels as Buttons */}
-                        <div className="bg-white py-2 px-5 w-fit absolute -bottom-5 left-1/2 transform -translate-x-1/2 flex gap-4 rounded-[40px] justify-center overflow-x-auto whitespace-nowrap no-scrollbar shadow-md">
+                        <div className="bg-white py-2 px-3 sm:px-5 w-full max-w-[90%] absolute -bottom-4 sm:-bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2 sm:gap-4 rounded-full justify-start overflow-x-auto whitespace-nowrap no-scrollbar shadow-md">
                             {images.map((item, index) => (
                                 <button
                                     key={index}
-                                    className={`px-4 py-2 border text-sm flex flex-row items-center gap-2 font-medium rounded-full transition-all duration-300 ${currentIndex === index
-                                        ? 'text-primary'
-                                        : 'text-black'
+                                    className={`px-3 sm:px-4 py-1 sm:py-2 border text-xs sm:text-sm flex flex-row items-center gap-1 sm:gap-2 font-medium rounded-full transition-all duration-300 ${currentIndex === index ? 'text-primary' : 'text-black'
                                         }`}
                                     onClick={() => setCurrentIndex(index)}
                                 >
@@ -86,6 +84,7 @@ const BlurrySlider = () => {
                                 </button>
                             ))}
                         </div>
+
                     </div>
                 </div>
             </section>

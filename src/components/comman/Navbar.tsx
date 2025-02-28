@@ -21,17 +21,17 @@ const Navbar = () => {
             <section className="flex items-center justify-between p-[10px] rounded-full relative overflow-hidden">
                 <Image loading="eager" src={NavbarBackgroundImage} width={1153} height={641} alt="bg" className="-z-10 w-full absolute brightness-[0.7] top-0 right-0 left-0 object-cover" />
                 {/* Logo */}
-                <div className="text-xl font-bold text-white flex flex-row items-center gap-2">
+                <div className="text-xl font-bold text-white rounded-full overflow-hidden p-1 bg-white">
                     <Image
                         src={assets.Logo}
                         alt="logo"
-                        width={33}
+                        width={50}
                         height={31}
                         loading="eager"
                     />
-                    <span>
+                    {/* <span>
                         Space Sculpt
-                    </span>
+                    </span> */}
                 </div>
 
                 {/* Desktop Navigation Links */}

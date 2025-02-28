@@ -22,9 +22,13 @@ const CardGrid = () => {
 
 const AboutThird = () => {
     return (
-        <section className='px-6 py-20 space-y-8'>
-            <h1 className='text-[106px] leading-[143px] text-center text-secondary font-medium'>Our <span className="text-primary">Purpose</span> and <span className="text-primary">Promise</span></h1>
-            <p className='text-2xl font-normal text-center'>{"Driven by creativity, guided by precision—our mission, vision, and values shape every space we design, while our commitment to excellence sets us apart."}</p>
+        <section className='px-6 py-10 lg:py-20 space-y-8'>
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[106px] 
+               leading-tight md:leading-[120px] lg:leading-[143px] 
+               text-center text-secondary font-medium">
+                Our <span className="text-primary">Purpose</span> and <span className="text-primary">Promise</span>
+            </h1>
+            <p className='text-lg md:text-xl lg:text-2xl font-normal text-center'>{"Driven by creativity, guided by precision our mission, vision, and values shape every space we design, while our commitment to excellence sets us apart."}</p>
             <CardGrid />
         </section>
     )

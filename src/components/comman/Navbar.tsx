@@ -15,13 +15,28 @@ const Navbar = () => {
 
     const NavbarBackgroundImage = navLinks.find((link) => link.link === pathname)?.bgImage as string;
 
+    // Function to close the mobile menu
+    const onLinkClicked = () => {
+        setIsOpen(false);
+    };
 
     return (
         <nav className="absolute top-0 left-1/2 border-[10px] border-solid rounded-b-3xl bg-white border-white transform -translate-x-1/2 max-[767px]:w-4/5 max-[990px]:w-full w-4/5 z-50">
             <section className="flex items-center justify-between p-[10px] rounded-full relative overflow-hidden">
-                <Image loading="eager" src={NavbarBackgroundImage} width={1153} height={641} alt="bg" className="-z-10 w-full absolute brightness-[0.7] top-0 right-0 left-0 object-cover" />
-                {/* Logo */}
-                <div className="text-xl font-bold text-white rounded-full overflow-hidden p-1 bg-white">
+                <Image
+                    loading="eager"
+                    src={NavbarBackgroundImage}
+                    width={1153}
+                    height={641}
+                    alt="bg"
+                    className="-z-10 w-full absolute brightness-[0.7] top-0 right-0 left-0 object-cover"
+                />
+                
+                {/* Logo (Closes Menu on Click) */}
+                <div
+                    className="text-xl font-bold text-white rounded-full overflow-hidden p-1 bg-white cursor-pointer"
+                    onClick={onLinkClicked}
+                >
                     <Image
                         src={assets.Logo}
                         alt="logo"
@@ -29,27 +44,28 @@ const Navbar = () => {
                         height={31}
                         loading="eager"
                     />
-                    {/* <span>
-                        Space Sculpt
-                    </span> */}
                 </div>
 
                 {/* Desktop Navigation Links */}
-                <ul className="hidden rounded-[20px] md:flex  text-white">
+                <ul className="hidden rounded-[20px] md:flex text-white">
                     {navLinks.map((navlink: NavbarLinks, index: number) => (
                         <Link
                             href={navlink.link}
                             passHref
                             key={index}
                             className={`pr-4 mr-4 ${index !== navLinks.length - 1 ? "border-r-primary border-r-[1px]" : ""}`}
+                            onClick={onLinkClicked} // Closes menu on link click
                         >
                             <li className="hover:text-white cursor-pointer">{navlink.title}</li>
                         </Link>
                     ))}
                 </ul>
 
-                {/* CTA Button (Hidden on Mobile) */}
-                <button className="hidden md:flex gap-2 bg-white flex-row items-center text-white px-5 py-1 rounded-full">
+                {/* CTA Button (Hidden on Mobile) - Closes Menu on Click */}
+                <button
+                    className="hidden md:flex gap-2 bg-white flex-row items-center text-white px-5 py-1 rounded-full"
+                    onClick={onLinkClicked}
+                >
                     <Image
                         src={assets.PhoneIcon}
                         alt="phone"
@@ -67,9 +83,9 @@ const Navbar = () => {
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
-
-                {/* Mobile Menu */}
             </section>
+
+            {/* Mobile Menu */}
             {isOpen && (
                 <div className="absolute top-16 right-0 w-fit bg-white shadow-lg rounded-lg md:hidden flex flex-col gap-8 items-center py-4 px-2">
                     <ul className="flex flex-col gap-8 text-black">
@@ -78,12 +94,18 @@ const Navbar = () => {
                                 href={navlink.link}
                                 passHref
                                 key={index}
+                                onClick={onLinkClicked} // Closes menu on link click
                             >
                                 <li className="hover:text-white cursor-pointer">{navlink.title}</li>
                             </Link>
                         ))}
                     </ul>
-                    <button className="flex gap-2 bg-primary flex-row items-center text-white px-5 py-1 rounded-full">
+
+                    {/* Mobile CTA Button - Closes Menu on Click */}
+                    <button
+                        className="flex gap-2 bg-primary flex-row items-center text-white px-5 py-1 rounded-full"
+                        onClick={onLinkClicked}
+                    >
                         <Image
                             src={assets.PhoneIcon}
                             alt="phone"

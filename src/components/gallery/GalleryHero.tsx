@@ -4,18 +4,28 @@ import React from 'react'
 
 const GalleryHero = () => {
     return (
-        <section className='text-bold text-white w-full flex flex-col justify-end relative rounded-xl overflow-hidden h-screen p-8'>
-            <Image loading='eager' src={assets.galleryHero} width={1153} height={641} alt="bg" className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.7] top-0 right-0 left-0 object-cover" />
-            <div className='text-left flex flex-col lg:flex-row items-end gap-4 flex-1'>
-                <h1 className='text-[100px] leading-[135px] text-white font-medium'>
-                    Explore Our <br />Crafted Creations
+        <section className="relative w-full h-screen flex flex-col justify-end items-end p-6 sm:p-8 text-white rounded-xl overflow-hidden">
+            {/* Background Image */}
+            <Image
+                loading="eager"
+                src={assets.galleryHero}
+                width={1153}
+                height={641}
+                alt="bg"
+                className="absolute inset-0 w-full h-full object-cover brightness-[0.7] -z-10"
+            />
+
+            {/* Content Container */}
+            <div className="text-left flex flex-col items-start min-[1440px]:flex-row min-[1440px]:items-end gap-4">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight font-medium lg:flex-1">
+                    Explore Our <br /> Crafted Creations
                 </h1>
-                <p className='text-2xl font-medium text-white px-8 flex-1'>
+                <p className="text-lg sm:text-xl md:text-2xl font-medium lg:px-4 sm:px-8 lg:flex-1">
                     A showcase of inspired spaces where design meets craftsmanship. Discover how we bring ideas to life, one detail at a time.
                 </p>
             </div>
-
         </section>
+
     )
 }
 

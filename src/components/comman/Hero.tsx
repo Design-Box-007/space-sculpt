@@ -20,11 +20,11 @@ const Hero: React.FC<HeroProps> = ({ heading, content, ctaName, ctaLink, ctaStat
                 width={1153}
                 height={641}
                 alt="background"
-                className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.7] top-0 right-0 left-0 object-cover"
+                className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.5] top-0 right-0 left-0 object-cover"
             />
 
             <div className="text-left flex flex-col gap-6 sm:gap-4 md:gap-6 lg:gap-8">
-                <h1 className="text-6xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white font-medium" dangerouslySetInnerHTML={{ __html: heading }} />
+                <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white font-medium" dangerouslySetInnerHTML={{ __html: heading }} />
                 <p className="text-sm sm:text-base md:text-lg font-medium text-white" dangerouslySetInnerHTML={{ __html: content }} />
 
                 {/* Conditionally render CTA button */}

@@ -50,7 +50,7 @@ interface Blog {
     title: string;
     description: string;
     imgSrc: string;
-    // component: React.FC;
+    component: React.FC;
 }
 
 interface ContactForm {

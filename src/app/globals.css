@@ -17,8 +17,15 @@
 
 :root {
     --font-satoshi: "Satoshi", sans-serif;
-    --font-poppins:"Poppins", serif;
+    --font-poppins: "Poppins", serif;
 }
+
+html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+}
+
+
 
 body {
     font-family: var(--font-satoshi);
@@ -26,22 +33,6 @@ body {
     margin: 0 auto;
 }
 
-/* add the code bellow */
-@layer utilities {
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        /* Firefox */
-    }
-}
 
 .footer-black-gradient {
     background: linear-gradient(360deg, #323232 0%, #222222 100%);

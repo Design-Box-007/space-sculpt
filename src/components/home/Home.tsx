@@ -15,7 +15,7 @@ const Home = () => {
         content="From concept to creation, we craft interiors that seamlessly blend <br />
       sophistication, functionality, and your unique style—transforming <br />
       every space into a masterpiece of timeless elegance."
-        ctaName="Get Free Consultation"
+        // ctaName="Get Free Consultation"
         ctaLink="/contact"
         bgImage={assets.HomeHeroImage}
         ctaStatus={true}

@@ -14,18 +14,18 @@ const Footer = () => {
         <div>
           <nav className="flex items-center justify-between">
             {/* logo */}
-            <div className="text-xl font-bold text-white rounded-full overflow-hidden p-1 bg-white">
-                    <Image
-                        src={assets.Logo}
-                        alt="logo"
-                        width={50}
-                        height={50}
-                        loading="eager"
-                    />
-                    {/* <span>
-                        Space Sculpt
+            <div className="text-xl font-bold text-white flex flex-row items-center gap-2">
+              <Image
+                src={assets.Logo}
+                alt="logo"
+                width={200}
+                height={83}
+                className=""
+              />
+              {/* <span>
+                        <span className="text-primary">S</span>pace <span className="text-primary">S</span>culp<span className="text-primary">t</span>
                     </span> */}
-                </div>
+            </div>
             {/* Desktop Navigation Links */}
             <ul className="rounded-[20px] md:flex  text-white">
               {navLinks.map((navlink: NavbarLinks, index: number) => (

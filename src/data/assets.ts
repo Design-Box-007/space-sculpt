@@ -1,7 +1,7 @@
 import { Assets } from "@/types"
 
 const assets: Assets = {
-    Logo: '/logo.jpg',
+    Logo: '/logo.png',
     PhoneIcon: './images/phone-icon.svg',
     HomeHeroImage: "/images/hero1.png",
     HomeAboutImage: "/images/home-about.png",

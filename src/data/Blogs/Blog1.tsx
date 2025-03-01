@@ -7,7 +7,7 @@ const Blog1 = () => {
         When it comes to creating a space that feels both luxurious and welcoming, following fleeting trends can be
         tempting. But true style stands the test of time. At Space Sculpt, we believe that great design blends
         functionality with enduring elegance. In this article, we’ll explore five timeless interior design trends that
-        elevate any space—whether you're refreshing a cozy home or revamping a commercial masterpiece.
+        elevate any space—whether you’re refreshing a cozy home or revamping a commercial masterpiece.
       </p>
 
       <div className="space-y-6">

@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { IconType } from "react-icons";
 
 interface Assets {

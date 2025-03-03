@@ -6,10 +6,11 @@ import Testimonials from './Testimonials'
 import BlurrySlider from './BlurrySlider'
 import Hero from '../comman/Hero'
 import assets from '@/data/assets'
+import TextMarquee from './TextMarquee'
 
 const Home = () => {
   return (
-    <section className='p-[10px]'>
+    <section className='p-[10px] overflow-hidden'>
       <Hero
         heading="Reimagine Your Space <br /> with <span class='text-primary'>Timeless</span> Elegance"
         content="From concept to creation, we craft interiors that seamlessly blend <br />
@@ -23,6 +24,7 @@ const Home = () => {
 
       <About />
       <WhatWeOffer />
+      <TextMarquee />
       <BlurrySlider />
       <Testimonials />
       <Contact />

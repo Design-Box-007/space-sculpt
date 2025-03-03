@@ -106,20 +106,23 @@ const Navbar = () => {
                     </ul>
 
                     {/* Mobile CTA Button - Closes Menu on Click */}
-                    <button
-                        className="flex gap-2 bg-primary flex-row items-center text-white px-5 py-1 rounded-full"
-                        onClick={onLinkClicked}
-                    >
-                        <Image
-                            src={assets.PhoneIcon}
-                            alt="phone"
-                            width={24}
-                            height={24}
-                            loading="eager"
-                            className="bg-white rounded-full"
-                        />
-                        <span className="text-white text-base font-medium">Get a Consult</span>
-                    </button>
+                    <Link href={`${pathname}/#contact`}>
+
+                        <button
+                            className="flex gap-2 bg-primary flex-row items-center text-white px-5 py-1 rounded-full"
+                            onClick={onLinkClicked}
+                        >
+                            <Image
+                                src={assets.PhoneIcon}
+                                alt="phone"
+                                width={24}
+                                height={24}
+                                loading="eager"
+                                className="bg-white rounded-full"
+                            />
+                            <span className="text-white text-base font-medium">Get a Consult</span>
+                        </button>
+                    </Link>
                 </div>
             )}
         </nav>

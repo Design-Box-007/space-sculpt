@@ -1,19 +1,21 @@
 'use client'
 
-import assets from '@/data/assets'
 import { Gallery } from '@/types'
-import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import React from 'react'
+
+
+// import { ArrowRight } from 'lucide-react'
+// import assets from '@/data/assets'
+// import { motion } from 'framer-motion'
 
 const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
-    const [showContent, setShowContent] = useState(false);
+    // const [showContent, setShowContent] = useState(false);
 
-    const toggleContent = (e: React.MouseEvent) => {
-        e.stopPropagation(); // Prevent parent click event from triggering
-        setShowContent(prev => prev = !prev);
-    };
+    // const toggleContent = (e: React.MouseEvent) => {
+    //     e.stopPropagation(); // Prevent parent click event from triggering
+    //     setShowContent(prev => prev = !prev);
+    // };
 
     return (
         <div
@@ -31,15 +33,15 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
             />
 
             {/* Title & Arrow */}
-            <div className="relative z-20 w-full flex flex-row justify-between">
+            {/* <div className="relative z-20 w-full flex flex-row justify-between">
                 <h6 className="text-white font-medium text-base">{data.title}</h6>
                 <span className="bg-white rounded-full p-1">
                     <ArrowRight size={16} className="text-gray-600 -rotate-45" />
                 </span>
-            </div>
+            </div> */}
 
             {/* Animated Expand/Shrink Content */}
-            <motion.div
+            {/* <motion.div
                 initial={{ height: 0, opacity: 0, transformOrigin: "bottom" }}
                 animate={showContent ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
                 transition={{
@@ -62,13 +64,13 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
                     </div>
                     <p className="text-gray-800">{data.content}</p>
                 </motion.div>
-            </motion.div>
+            </motion.div> */}
 
 
 
 
             {/* Expand Button */}
-            {!showContent && (
+            {/* {!showContent && (
                 <button
                     className="relative z-20 w-full flex flex-row justify-end"
                     onClick={toggleContent}
@@ -84,7 +86,7 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
                         </div>
                     </motion.div>
                 </button>
-            )}
+            )} */}
         </div>
     );
 };

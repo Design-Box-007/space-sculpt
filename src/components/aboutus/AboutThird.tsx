@@ -16,7 +16,7 @@ const gridVariants = {
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };
 
 const CardGrid = () => {
@@ -26,7 +26,7 @@ const CardGrid = () => {
       variants={gridVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.3 }} // Adjusted for mobile
     >
       {aboutUsPageData.map((data: AboutUsPageData, index: number) => (
         <motion.div

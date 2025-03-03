@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { IconType } from "react-icons";
 
 interface Assets {
@@ -50,7 +51,7 @@ interface Blog {
     title: string;
     description: string;
     imgSrc: string;
-    component: React.FC;
+    component: string;
 }
 
 interface ContactForm {

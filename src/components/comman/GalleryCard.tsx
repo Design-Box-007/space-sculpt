@@ -1,13 +1,9 @@
-'use client'
+"use client";
 
-import { Gallery } from '@/types'
-import Image from 'next/image'
-import React from 'react'
-
-
-// import { ArrowRight } from 'lucide-react'
-// import assets from '@/data/assets'
-// import { motion } from 'framer-motion'
+import { Gallery } from '@/types';
+import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
     // const [showContent, setShowContent] = useState(false);
@@ -18,9 +14,12 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
     // };
 
     return (
-        <div
-            className="h-[640px] p-4 rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative cursor-pointer"
-        // onClick={() => setShowContent(false)} // Clicking anywhere outside collapses
+        <motion.div
+            className="h-[500px] p-4 rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative cursor-pointer"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
         >
             {/* Background Image */}
             <Image
@@ -66,9 +65,6 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
                 </motion.div>
             </motion.div> */}
 
-
-
-
             {/* Expand Button */}
             {/* {!showContent && (
                 <button
@@ -87,8 +83,9 @@ const GalleryCard: React.FC<{ data: Gallery }> = ({ data }) => {
                     </motion.div>
                 </button>
             )} */}
-        </div>
+        </motion.div>
     );
 };
 
 export default GalleryCard;
+

@@ -5,6 +5,8 @@ import gallery from '@/data/gallery';
 import services from '@/data/services';
 import GalleryCard from '../comman/GalleryCard';
 import { Gallery, Service } from '@/types';
+import { motion } from 'framer-motion';
+
 
 const GalleryMainSection = () => {
     const [selectedService, setSelectedService] = useState(services[0].id);
@@ -15,9 +17,17 @@ const GalleryMainSection = () => {
     return (
         <section className='px-4 py-10'>
             {/* Responsive Heading */}
-            <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-secondary text-center my-8'>
-                {"Explore the"} <span className='text-primary'>Art of <br className='hidden md:block' /> Space</span> Transformation
-            </h1>
+
+            <motion.h1
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-secondary text-center my-8"
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 1 }}
+            >
+                {"Explore the"} <span className="text-primary">Art of <br className="hidden md:block" /> Space</span> Transformation
+            </motion.h1>
+
 
             {/* Filter Buttons */}
             <div className='flex gap-2 md:gap-4 justify-start mt-6 mb-10 overflow-x-auto whitespace-nowrap no-scrollbar pl-4'>
@@ -43,7 +53,7 @@ const GalleryMainSection = () => {
 
 
             {/* Gallery Grid */}
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                 {filteredGallery.map((item: Gallery, index: number) => (
                     <GalleryCard data={item} key={index} />
                 ))}

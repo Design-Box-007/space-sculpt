@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import { FaHome } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
+
 const BlurrySlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -19,9 +20,17 @@ const BlurrySlider = () => {
 
     return (
         <section className="px-4 md:px-8 lg:px-16 overflow-hidden flex flex-col justify-center min-h-[50vh]">
-            <h4 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 sm:mb-8 text-center md:text-left">
+
+            <motion.h4
+                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 sm:mb-8 text-center md:text-left"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 1 }}
+            >
                 Our <span className="text-primary">Creations</span> Speak for Themselves
-            </h4>
+            </motion.h4>
+
 
             {/* Image Container */}
             <section className="flex justify-center border border-solid border-primary items-center relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">

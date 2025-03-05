@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <nav className={`absolute top-0 left-1/2 border-[10px] border-solid rounded-b-3xl bg-white border-white transform -translate-x-1/2 max-[767px]:w-4/5 max-[990px]:w-full w-4/5 z-50 ${NavbarBackgroundImage ? "absolute" : 'static w-full'}`}>
-            <section className="flex items-center justify-between p-[10px] rounded-full relative overflow-hidden">
+            <section className="flex items-center justify-between p-[10px] md:p-3 lg:p-5 rounded-full relative overflow-hidden">
                 {NavbarBackgroundImage && <Image
                     loading="eager"
                     src={NavbarBackgroundImage}

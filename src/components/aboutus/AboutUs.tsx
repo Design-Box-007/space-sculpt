@@ -6,7 +6,7 @@ import AboutThird from './AboutThird'
 
 const AboutUs = () => {
     return (
-        <section className='p-[10px]'>
+        <section className='p-[10px] md:p-3 lg:p-5'>
             <AboutHero />
             <AboutSecond />
             <AboutThird />

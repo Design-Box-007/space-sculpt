@@ -11,11 +11,11 @@ const BlurrySlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const images = [
-        { label: "Commercial", src: assets.conceptDesign },
-        { label: "Residential", src: assets.residentialInteriors },
-        { label: "Custom Furniture & Décor", src: assets.commerceSpace },
-        { label: "Concept Design", src: assets.sinage },
-        { label: "Renovation & Remodeling", src: assets.lasercutting }
+        { label: "Commercial", src: assets.slider_commercial },
+        { label: "Residential", src: assets.slider_residential },
+        { label: "Concept Design", src: assets.slider_concept },
+        { label: "Renovation & Remodeling", src: assets.slider_rennovation },
+        { label: "Laser Cutting", src: assets.slider_laser },
     ];
 
     return (
@@ -33,7 +33,7 @@ const BlurrySlider = () => {
 
 
             {/* Image Container */}
-            <section className="flex justify-center border border-solid border-primary items-center relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
+            <section className="flex w-full h-full justify-center border border-solid border-primary items-center relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
                 <div className="border-white flex justify-center items-center p-6 sm:p-10 md:p-12 lg:p-16 border-[3px] border-solid relative w-full h-full">
 
                     {/* Blurred Background Image */}

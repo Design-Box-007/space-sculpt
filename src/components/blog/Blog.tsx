@@ -28,7 +28,7 @@ const Blog = () => {
     if (!BlogComponent) return <>BLOG NOT FOUND</>;
 
     return (
-        <section className='p-[10px] font-poppins space-y-10'>
+        <section className='p-[10px] md:p-3 lg:p-5 font-poppins space-y-10'>
             <BlogHeader blog={blogData} />
             <Suspense fallback={<p>Loading blog...</p>}>
                 <BlogComponent />

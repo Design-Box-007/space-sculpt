@@ -1,5 +1,5 @@
 import { AboutUsPageData, NavbarLinks, SocialMediaLinks } from "@/types";
-import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram, FaMedium } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import assets from "./assets";
 
@@ -14,10 +14,13 @@ const navLinks: NavbarLinks[] = [
 
 const socialMedia: SocialMediaLinks[] = [
     { icon: FaFacebook, link: "https://facebook.com" },
-    { icon: FaLinkedin, link: "https://linkedin.com" },
+    { icon: FaLinkedin, link: "https://x.com/Spacesculpt_uae " },
     { icon: FaInstagram, link: "https://instagram.com" },
-    { icon: FaXTwitter, link: "https://twitter.com" },
+    { icon: FaXTwitter, link: "https://x.com/Spacesculpt_uae" },
+    { icon: FaMedium, link: "https://medium.com/@Spacesculp" },
 ];
+
+
 
 
 const aboutUsPageData: AboutUsPageData[] = [

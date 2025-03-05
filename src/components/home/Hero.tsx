@@ -18,7 +18,7 @@ const Hero = () => {
           sophistication, functionality, and your unique style—transforming <br />
           every space into a masterpiece of timeless elegance.
         </p>
-        <button className="flex gap-2 mt-12 w-fit bg-white flex-row-reverse items-center text-white p-[10px] rounded-full">
+        <button className="flex gap-2 mt-12 w-fit bg-white flex-row-reverse items-center text-white p-[10px] md:p-3 lg:p-5 rounded-full">
           <span className='bg-primary rounded-full p-1'>
             <ArrowRight size={16} className='text-white' />
           </span>

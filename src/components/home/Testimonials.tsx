@@ -2,7 +2,6 @@
 
 import testimonials from '@/data/testimonials'
 import { Testimonial } from '@/types';
-import Image from 'next/image';
 import React from 'react';
 import { FaQuoteRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -44,16 +43,8 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
                             </p>
                         </div>
                         <div className="flex flex-row gap-4 justify-start items-center">
-                            <Image
-                                src={item.imgSrc}
-                                alt={item.testimonee}
-                                width={32}
-                                height={32}
-                                className="rounded-full object-cover"
-                                loading="lazy"
-                            />
                             <h4 className="text-white text-[22px] leading-[29px] font-bold">
-                                {item.testimonee}
+                                - {item.testimonee}
                             </h4>
                         </div>
                     </motion.div>

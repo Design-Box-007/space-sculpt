@@ -8,12 +8,12 @@ const assets: Assets = {
     FooterImage: '/images/footer-image.png',
 
     // projects
-    commerceSpace: "/images/projects/commerce-space.png",
-    conceptDesign: "/images/projects/concept-design.png",
-    lasercutting: "/images/projects/lasercutting.png",
-    renovationRemodeling: "/images/projects/renovation-remodeling.png",
+    commerceSpace: "/images/projects2/commercial.jpg",
+    conceptDesign: "/images/projects2/coceptual-design.jpg",
+    lasercutting: "/images/projects2/laser.jpg",
+    renovationRemodeling: "/images/projects2/rennovation-and-remodeling.jpg",
     residentialInteriors: "/images/projects/residential-interiors.png",
-    sinage: "/images/projects/sinage.png",
+    sinage: "/images/projects2/signage.jpg",
 
     // project icons
     building: "/images/projects/building.svg",
@@ -22,6 +22,12 @@ const assets: Assets = {
     laser: "/images/projects/laser.svg",
     signboard: "/images/projects/signboard.svg",
     sofa: "/images/projects/sofa.svg",
+
+    slider_commercial: "/images/project-slider/commercial.jpg",
+    slider_concept: "/images/project-slider/conceptual-design.jpg",
+    slider_laser: "/images/project-slider/laser.jpg",
+    slider_rennovation: "/images/project-slider/rennovation-remodeling.jpg",
+    slider_residential: "/images/project-slider/residential.jpg",
 
 
     // testimonials

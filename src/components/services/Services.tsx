@@ -8,7 +8,7 @@ import ServiceCTA from './ServiceCTA'
 
 const Services = () => {
     return (
-        <section className='p-[10px]'>
+        <section className='p-[10px] md:p-3 lg:p-5'>
             <Hero
                 heading='Crafted for Those Who Value <span class="text-primary">Design Excellence</span>'
                 content='Explore a range of innovative services that merge creativity, precision,<br/> and craftsmanship to transform your space.'

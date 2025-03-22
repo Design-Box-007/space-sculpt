@@ -57,7 +57,7 @@ const Navbar = () => {
                             className={`pr-4 mr-4 ${index !== navLinks.length - 1 ? "border-r-primary border-r-[1px]" : ""} ${NavbarBackgroundImage ? "text-white" : "text-black"}`}
                             onClick={onLinkClicked} // Closes menu on link click
                         >
-                            <li className="hover:text-white cursor-pointer">{navlink.title}</li>
+                            <li className="hover:-translate-y-2 transition-all duration-200 ease-in-out cursor-pointer">{navlink.title}</li>
                         </Link>
                     ))}
                 </ul>

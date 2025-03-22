@@ -68,11 +68,17 @@ const assets: Assets = {
     blogsHeroImage: "/images/blogsHeroImage.png",
 
 
-    // blogs 
 
-    Blog1: "/images/blogs/blog1.jpeg",
-    Blog2: "/images/blogs/blog2.jpeg",
-    Blog3: "/images/blogs/blog3.jpeg",
+
+    // blogs 
+    // Blog1: "/images/blogs/blog1.jpeg",
+    // Blog2: "/images/blogs/blog2.jpeg",
+    // Blog3: "/images/blogs/blog3.jpeg",
+
+
+    Blog1: "/images/blogs/blog-1.png",
+    Blog2: "/images/blogs/blog-2.png",
+    Blog3: "/images/blogs/blog-3.png",
     Blog4: "/images/blogs/blog4.jpeg",
     Blog5: "/images/blogs/blog5.jpeg",
     Blog6: "/images/blogs/blog6.jpeg",

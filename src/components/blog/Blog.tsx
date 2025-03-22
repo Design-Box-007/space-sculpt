@@ -10,7 +10,10 @@ import BlogHeader from "./BlogHeader";
 import Head from "next/head";
 
 const componentMap = {
+    DummyBlog: dynamic(() => import("@/data/Blogs/DummyBlog")),
     Blog1: dynamic(() => import("@/data/Blogs/Blog1")),
+    Blog2: dynamic(() => import("@/data/Blogs/Blog2")),
+    Blog3: dynamic(() => import("@/data/Blogs/Blog3")),
     // Add other blog components here...
 };
 
@@ -40,7 +43,7 @@ const Blog = () => {
             </Head>
             <BlogHeader blog={blogData} />
             <Suspense fallback={<p>Loading blog...</p>}>
-                <BlogComponent />
+                    <BlogComponent />
             </Suspense>
         </section>
     );

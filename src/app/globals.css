@@ -50,3 +50,7 @@ body {
     scrollbar-width: none;
     /* Firefox */
 }
+
+.blog-content {
+    @apply px-4 py-10 mx-auto
+}

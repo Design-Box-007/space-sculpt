@@ -21,46 +21,46 @@ export const blogListData: Blog[] = [
         imgSrc: assets.Blog3,
         component: "Blog3"
     },
-    {
-        title: "Smart Furniture for Small Apartments",
-        description: "Explore space-saving furniture solutions designed for compact living areas.",
-        imgSrc: assets.Blog4,
-        component: "DummyBlog"
+    // {
+    //     title: "Smart Furniture for Small Apartments",
+    //     description: "Explore space-saving furniture solutions designed for compact living areas.",
+    //     imgSrc: assets.Blog4,
+    //     component: "DummyBlog"
 
-    },
-    {
-        title: "Sustainable Interior Design",
-        description: "Learn how to incorporate eco-friendly materials and practices into your home decor.",
-        imgSrc: assets.Blog5,
-        component: "DummyBlog"
+    // },
+    // {
+    //     title: "Sustainable Interior Design",
+    //     description: "Learn how to incorporate eco-friendly materials and practices into your home decor.",
+    //     imgSrc: assets.Blog5,
+    //     component: "DummyBlog"
 
-    },
-    {
-        title: "Bohemian Style: A Cozy Home Makeover",
-        description: "Find out how to achieve a relaxed, artistic, and warm bohemian-style home.",
-        imgSrc: assets.Blog6,
-        component: "DummyBlog"
+    // },
+    // {
+    //     title: "Bohemian Style: A Cozy Home Makeover",
+    //     description: "Find out how to achieve a relaxed, artistic, and warm bohemian-style home.",
+    //     imgSrc: assets.Blog6,
+    //     component: "DummyBlog"
 
-    },
-    {
-        title: "Luxury Interior Designs on a Budget",
-        description: "Affordable ways to bring a touch of luxury into your home without breaking the bank.",
-        imgSrc: assets.Blog7,
-        component: "DummyBlog"
+    // },
+    // {
+    //     title: "Luxury Interior Designs on a Budget",
+    //     description: "Affordable ways to bring a touch of luxury into your home without breaking the bank.",
+    //     imgSrc: assets.Blog7,
+    //     component: "DummyBlog"
 
-    },
-    {
-        title: "The Art of Wall Decor",
-        description: "Tips on decorating your walls with art, wallpaper, and creative designs.",
-        imgSrc: assets.Blog8,
-        component: "DummyBlog"
+    // },
+    // {
+    //     title: "The Art of Wall Decor",
+    //     description: "Tips on decorating your walls with art, wallpaper, and creative designs.",
+    //     imgSrc: assets.Blog8,
+    //     component: "DummyBlog"
 
-    },
-    {
-        title: "Modern Kitchen Designs That Inspire",
-        description: "Explore trending kitchen designs that blend functionality with aesthetics.",
-        imgSrc: assets.Blog9,
-        component: "DummyBlog"
+    // },
+    // {
+    //     title: "Modern Kitchen Designs That Inspire",
+    //     description: "Explore trending kitchen designs that blend functionality with aesthetics.",
+    //     imgSrc: assets.Blog9,
+    //     component: "DummyBlog"
 
-    },
+    // },
 ];

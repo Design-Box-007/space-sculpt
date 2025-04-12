@@ -9,9 +9,9 @@ const Hero = () => {
       <Image loading='eager' src={assets.HomeHeroImage} width={1153} height={641} alt="bg" className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.7] top-0 right-0 left-0 object-cover" />
 
       <div className='text-left flex flex-col gap-4'>
-        <h1 className='text-8xl text-white font-medium'>
-          Reimagine Your Space <br />
-          with <span className='text-primary'>Timeless</span> Elegance
+        <h1 className='text-8xl text-white font-medium capitalize'>
+          Dubai’s top <br />
+          with <span className='text-primary'>interior designers</span>complete project solutions
         </h1>
         <p className='text-base font-medium text-white px-8'>
           From concept to creation, we craft interiors that seamlessly blend <br />

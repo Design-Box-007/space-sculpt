@@ -22,13 +22,14 @@ const BlurrySlider = () => {
         <section className="px-4 md:px-8 lg:px-16 overflow-hidden flex flex-col justify-center min-h-[50vh]">
 
             <motion.h4
-                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 sm:mb-8 text-center md:text-left"
+                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 sm:mb-8 text-center capitalize md:text-left"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1 }}
             >
-                Our <span className="text-primary">Creations</span> Speak for Themselves
+
+                Explore Our <span className="text-primary">Interior </span> Fit Out Projects – Inspiring Designs Across Dubai
             </motion.h4>
 
 

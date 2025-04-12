@@ -60,7 +60,7 @@ const WhatWeOffer = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1, delay: 0.3 }}
             >
-                Comprehensive Interior Solutions for <span className="text-primary">Every Space.</span>
+                Interior Fit Out & Design Services in Dubai – <span className="text-primary">Customized Solutions</span>
             </motion.h5>
 
 

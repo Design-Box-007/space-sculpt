@@ -1,16 +1,19 @@
 import AboutUs from '@/components/aboutus/AboutUs'
-import Head from 'next/head'
+import { Metadata } from 'next'
 import React from 'react'
+
+export const metadata: Metadata = {
+    title: 'About Space Sculpt | Expert Interior Designers',
+    description: 'Learn about Space Sculpt - a team of professional interior designers dedicated to creating stunning, functional, and modern spaces.',
+    robots: 'index, follow',
+    alternates: {
+        canonical: 'http://spacesculpt.ae/about',
+    },
+}
 
 const page = () => {
     return (
         <>
-            <Head>
-                <title>About Space Sculpt | Expert Interior Designers</title>
-                <meta name="description" content="Learn about Space Sculpt - a team of professional interior designers dedicated to creating stunning, functional, and modern spaces." />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="http://spacesculpt.ae/about" />
-            </Head>
             <AboutUs />
         </>
     )

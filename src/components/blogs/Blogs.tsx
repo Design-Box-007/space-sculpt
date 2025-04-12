@@ -8,7 +8,7 @@ const Blogs = () => {
     return (
         <section className="p-[10px] md:p-3 lg:p-5 space-y-10">
             <Hero
-                heading='Insights for Every Space, Inspiration for Every Style'
+                heading='Interior Design and Fit Out Insights – Expert Tips & Ideas'
                 content="Explore a range of knowledge, innovative services that merge <br/>creativity, precision, and craftsmanship to transform your space."
                 bgImage={assets.blogsHeroImage}
             />

@@ -17,8 +17,8 @@ const Contact = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1 }}
             >
-                {"Let's Design Your"} <br />
-                <span className="text-primary">Dream Space</span> Today
+                Get in Touch {"with Dubai’s Leading"} <br />
+                <span className="text-primary">Interior</span> Fit Out Company
             </motion.h1>
 
             <ContactForm />

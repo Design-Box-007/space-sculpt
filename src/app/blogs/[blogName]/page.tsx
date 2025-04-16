@@ -2,8 +2,9 @@ import Blog from '@/components/blog/Blog';
 import { blogListData } from "@/data/blogs";
 import formatToHyphenated from "@/utils/formatPathName";
 
-
-export const generateMetadata = async ({ params }: { params: { blogName: string } }) => {
+// Now awaiting params and extracting blogName
+export const generateMetadata = async ({ params }: { params: Promise<{ blogName: string }> }) => {
+    // Awaiting the params to resolve the Promise
     const { blogName } = await params;
 
     const blogData = blogListData.find(blog =>
@@ -48,8 +49,6 @@ export const generateMetadata = async ({ params }: { params: { blogName: string 
         metadataBase: new URL("https://spacesculpt.ae"),  // Set metadataBase for external URLs
     };
 };
-
-
 
 const Page = () => {
     return <Blog />;

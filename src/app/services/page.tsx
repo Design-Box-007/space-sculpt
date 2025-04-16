@@ -1,20 +1,18 @@
-import Services from '@/components/services/Services'
-import Head from 'next/head'
-import React from 'react'
+import Services from '@/components/services/Services';
+import { Metadata } from 'next';
+import React from 'react';
 
+export const metadata: Metadata = {
+    title: 'Our Services | Space Sculpt',
+    description: 'Discover our professional interior design services, including space planning, custom decor, and renovation solutions.',
+    robots: 'index, follow',
+    alternates: {
+        canonical: 'http://spacesculpt.ae/services',
+    },
+};
 
-const page = () => {
-    return (
-        <>
-            <Head>
-                <title>Our Services | Space Sculpt</title>
-                <meta name="description" content="Discover our professional interior design services, including space planning, custom decor, and renovation solutions." />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="http://spacesculpt.ae/services" />
-            </Head>
-            <Services />
-        </>
-    )
-}
+const Page = () => {
+    return <Services />;
+};
 
-export default page
+export default Page;

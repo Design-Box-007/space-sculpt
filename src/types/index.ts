@@ -51,6 +51,8 @@ interface Blog {
     description: string;
     imgSrc: string;
     component: string;
+    date: string;
+    updatedDate: string;
 }
 
 interface ContactForm {

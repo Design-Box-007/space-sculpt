@@ -7,19 +7,17 @@ import dynamic from "next/dynamic";
 import { useParams } from "next/navigation";
 import { Suspense } from "react";
 import BlogHeader from "./BlogHeader";
-import Head from "next/head";
 
 const componentMap = {
     DummyBlog: dynamic(() => import("@/data/Blogs/DummyBlog")),
     Blog1: dynamic(() => import("@/data/Blogs/Blog1")),
     Blog2: dynamic(() => import("@/data/Blogs/Blog2")),
     Blog3: dynamic(() => import("@/data/Blogs/Blog3")),
-    // Add other blog components here...
+    // Add more if needed
 };
 
 const Blog = () => {
-    const params = useParams();
-    const { blogName } = params;
+    const { blogName } = useParams();
 
     const blogData = blogListData.find((blog: BlogType) =>
         blogName === formatToHyphenated(blog.title)
@@ -31,22 +29,41 @@ const Blog = () => {
 
     if (!BlogComponent) return <>BLOG NOT FOUND</>;
 
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": blogData.title,
+        "description": blogData.description,
+        "image": blogData.imgSrc || "https://spacesculpt.ae/default-blog-image.jpg",
+        "url": `https://spacesculpt.ae/blogs/${formatToHyphenated(blogData.title)}`,
+        "author": {
+            "@type": "Person",
+            "name": "Space Sculpt"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Space Sculpt",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://spacesculpt.ae/logo.png"
+            }
+        },
+        "datePublished": blogData.date,
+        "dateModified": blogData.updatedDate || blogData.date
+    };
+
     return (
-        <section className='p-[10px] md:p-3 lg:p-5 font-poppins space-y-10'>
-            <Head>
-                <Head>
-                    <title>{blogData.title} | Space Sculpt Blog</title>
-                    <meta name="description" content={blogData.description} />
-                    <meta name="robots" content="index, follow" />
-                    <link rel="canonical" href={`http://spacesculpt.ae/blogs/${formatToHyphenated(blogData.title)}`} />
-                </Head>
-            </Head>
+        <section className='p-[10px] md:p-3 lg:p-5 font-poppins mt-[100px] space-y-10'>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             <BlogHeader blog={blogData} />
             <Suspense fallback={<p>Loading blog...</p>}>
-                    <BlogComponent />
+                <BlogComponent />
             </Suspense>
         </section>
     );
-}
+};
 
 export default Blog;

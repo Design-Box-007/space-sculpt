@@ -58,6 +58,21 @@ const assets: Assets = {
     conceptSketches: "/images/gallery/concept-sketches.png",
     intricateCncLaserTech: "/images/gallery/intricate-cnc-laser-tech.png",
 
+
+    // rennovation-remodelling
+
+
+    rennovationRemodelling1: "/images/rennovation-remodeling/rennovation-remodelling-1.jpg",
+    rennovationRemodelling2: "/images/rennovation-remodeling/rennovation-remodelling-2.jpg",
+    rennovationRemodelling3: "/images/rennovation-remodeling/rennovation-remodelling-3.jpg",
+    rennovationRemodelling4: "/images/rennovation-remodeling/rennovation-remodelling-4.jpg",
+    rennovationRemodelling5: "/images/rennovation-remodeling/rennovation-remodelling-5.jpg",
+    rennovationRemodelling6: "/images/rennovation-remodeling/rennovation-remodelling-6.jpg",
+    rennovationRemodelling7: "/images/rennovation-remodeling/rennovation-remodelling-7.jpg",
+    rennovationRemodelling8: "/images/rennovation-remodeling/rennovation-remodelling-8.jpg",
+    rennovationRemodelling9: "/images/rennovation-remodeling/rennovation-remodelling-9.jpg",
+    rennovationRemodelling10: "/images/rennovation-remodeling/rennovation-remodelling-10.jpg",
+
     // contact us 
 
     contactHero1: "/images/contactusHero1.png",

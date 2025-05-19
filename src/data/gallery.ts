@@ -53,6 +53,17 @@ const gallery: Gallery[] = [
         serviceId: "service1"
     },
 
+    // resdential-remodelling
+    { title: "Resdetial-Remodelling-1", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling1, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-2", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling2, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-3", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling3, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-4", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling4, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-5", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling5, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-6", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling6, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-7", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling7, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-8", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling8, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-9", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling9, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-10", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling10, icon: "icon", serviceId: "service3" },
 ]
 
 export default gallery;

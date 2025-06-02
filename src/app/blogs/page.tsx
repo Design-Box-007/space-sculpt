@@ -1,16 +1,9 @@
 import Blogs from '@/components/blogs/Blogs';
+import { metadata_blog } from '@/data/siteMetadata';
 import { Metadata } from 'next';
 import React from 'react';
 
-export const metadata: Metadata = {
-    title: 'Interior Design Blog | Space Sculpt',
-    description: 'Read expert interior design tips, trends, and ideas from Space Sculpt. Stay updated with the latest in home decor!',
-    robots: 'index, follow',
-    alternates: {
-        canonical: 'http://spacesculpt.ae/blogs',
-    },
-};
-
+export const metadata: Metadata = metadata_blog
 const Page = () => {
     return <Blogs />;
 };

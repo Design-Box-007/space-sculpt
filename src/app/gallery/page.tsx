@@ -1,15 +1,9 @@
 import Gallery from '@/components/gallery/Gallery';
+import { metadata_gallery } from '@/data/siteMetadata';
 import { Metadata } from 'next';
 import React from 'react';
 
-export const metadata: Metadata = {
-    title: 'Gallery | Space Sculpt Interior Designs',
-    description: 'Explore our portfolio of beautifully designed interiors, from modern homes to elegant office spaces.',
-    robots: 'index, follow',
-    alternates: {
-        canonical: 'http://spacesculpt.ae/gallery',
-    },
-};
+export const metadata: Metadata = metadata_gallery
 
 const Page = () => {
     return <Gallery />;

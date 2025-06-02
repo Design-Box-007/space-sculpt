@@ -1,15 +1,9 @@
 import Services from '@/components/services/Services';
+import { metadata_services } from '@/data/siteMetadata';
 import { Metadata } from 'next';
 import React from 'react';
 
-export const metadata: Metadata = {
-    title: 'Our Services | Space Sculpt',
-    description: 'Discover our professional interior design services, including space planning, custom decor, and renovation solutions.',
-    robots: 'index, follow',
-    alternates: {
-        canonical: 'http://spacesculpt.ae/services',
-    },
-};
+export const metadata: Metadata = metadata_services
 
 const Page = () => {
     return <Services />;

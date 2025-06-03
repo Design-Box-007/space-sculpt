@@ -54,3 +54,15 @@ body {
 .blog-content {
     @apply px-4 py-10 mx-auto
 }
+
+.custom-h2 {
+    @apply text-3xl md:text-4xl text-[#000000] font-medium;
+}
+
+.custom-p {
+    @apply text-base md:text-lg text-gray-600 font-normal
+}
+
+.service-blog{
+    @apply px-4 pb-6 pt-2 w-full mx-auto space-y-6
+}

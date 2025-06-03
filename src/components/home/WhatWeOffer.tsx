@@ -9,7 +9,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 
-const ServiceCard: React.FC<Omit<Service, 'description' | 'id'>> = ({ imgSrc, title, icon }) => {
+const ServiceCard: React.FC<Pick<Service, 'imgSrc' | 'title' | 'icon'>> = ({ imgSrc, title, icon }) => {
     return (
         <div className="h-[445px] rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative">
             <Image

@@ -8,7 +8,7 @@ export default function Service4() {
           design blueprints that lay the foundation for exceptional residential and commercial interiors.
         </p>
         <p className="text-gray-700">
-          Whether you're building from scratch or planning a renovation, our concept design process ensures that your
+          {"Whether you're building from scratch or planning a renovation, our concept design process ensures that your"}
           vision is developed with artistic insight, strategic planning, and technical expertise.
         </p>
       </section>

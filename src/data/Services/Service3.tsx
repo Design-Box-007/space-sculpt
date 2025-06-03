@@ -8,7 +8,7 @@ export default function Service3() {
                     creativity, functionality, and high-quality finishes.
                 </p>
                 <p className="text-gray-700">
-                    Whether you're looking to update a villa, modernize an apartment, or upgrade a retail or office space, our
+                    {"Whether you're looking to update a villa, modernize an apartment, or upgrade a retail or office space, our"}
                     renovation experts work with precision and passion to deliver a result that feels brand new—without losing its
                     original character.
                 </p>

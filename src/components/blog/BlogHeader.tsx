@@ -1,5 +1,4 @@
 import React from "react";
-import { Blog } from '@/types'
 import Image from "next/image";
 
 interface BlogHeaderProps {

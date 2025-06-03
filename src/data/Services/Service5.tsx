@@ -9,7 +9,7 @@ export default function Service5() {
           residential and commercial interiors.
         </p>
         <p className="text-gray-700">
-          Whether you're designing a retail store, corporate office, hospitality space, or residential building, our
+         {" Whether you're designing a retail store, corporate office, hospitality space, or residential building, our"}
           expert team develops signage that complements your interior design and strengthens your brand message.
         </p>
       </section>

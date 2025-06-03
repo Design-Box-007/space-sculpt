@@ -11,7 +11,7 @@ export default function Service2() {
           spaces.
         </p>
         <p className="text-gray-700">
-          Whether you're designing a corporate office, retail store, restaurant, or showroom, our expert team
+         {" Whether you're designing a corporate office, retail store, restaurant, or showroom, our expert team"}
           {"delivers innovative design solutions that support your operational needs while reflecting your brand’s"}
           personality. From layout planning to high-end finishes, we handle every detail with precision and
           creativity.

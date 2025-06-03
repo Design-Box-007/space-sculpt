@@ -70,9 +70,9 @@ const Hero: React.FC<HeroProps> = ({ heading, content, ctaName, ctaLink, ctaStat
         )}
       </div>
 
-      <div className="hidden md:block sm:text-base md:text-lg sm:w-[250px] md:w-[300px] lg:w-[331px] text-left font-medium text-white border-b-primary border-b-2 border-solid absolute bottom-4 right-3">
+      {/* <div className="hidden md:block sm:text-base md:text-lg sm:w-[250px] md:w-[300px] lg:w-[331px] text-left font-medium text-white border-b-primary border-b-2 border-solid absolute bottom-4 right-3">
         Commercial Interior
-      </div>
+      </div> */}
     </section>
   );
 };

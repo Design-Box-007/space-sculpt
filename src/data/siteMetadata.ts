@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-
+import assets from "./assets";
 // ===================== HOMEPAGE =====================
 export const metadata_home: Metadata = {
     title: "Best Interior Design Company in Dubai for Residential & Commercial Spaces",
@@ -21,7 +21,7 @@ export const metadata_home: Metadata = {
         description:
             "Experience personalized and elegant interior design solutions with Space Sculpt – specialists in residential, commercial, and renovation projects.",
         url: "https://www.spacesculpt.ae",
-        images: ["https://www.spacesculpt.ae/images/banner.jpg"]
+        images: [`https://www.spacesculpt.ae${assets.HomeHeroImage}`]
     },
     alternates: {
         canonical: "https://www.spacesculpt.ae"
@@ -47,7 +47,7 @@ export const metadata_about: Metadata = {
         description:
             "At Space Sculpt, we combine vision, design, and execution to transform spaces. Learn more about our mission, values, and approach.",
         url: "https://www.spacesculpt.ae/about-us",
-        images: ["https://www.spacesculpt.ae/images/about-banner.jpg"]
+        images: [`https://www.spacesculpt.ae${assets.aboutHero}`]
     },
     alternates: {
         canonical: "https://www.spacesculpt.ae/about-us"
@@ -75,7 +75,7 @@ export const metadata_services: Metadata = {
         description:
             "Custom interior design and fit out services in Dubai for homes, offices, and commercial spaces. Crafted with creativity and precision.",
         url: "https://www.spacesculpt.ae/services",
-        images: ["https://www.spacesculpt.ae/images/services-banner.jpg"]
+        images: [`https://www.spacesculpt.ae${assets.servicesHero}`]
     },
     alternates: {
         canonical: "https://www.spacesculpt.ae/services"
@@ -102,7 +102,7 @@ export const metadata_gallery: Metadata = {
         description:
             "Explore our curated gallery of residential and commercial interior projects, renovations, signage, and precision CNC craftsmanship.",
         url: "https://www.spacesculpt.ae/gallery",
-        images: ["https://www.spacesculpt.ae/images/gallery-banner.jpg"]
+        images: [`https://www.spacesculpt.ae${assets.galleryHero}`]
     },
     alternates: {
         canonical: "https://www.spacesculpt.ae/gallery"
@@ -128,7 +128,7 @@ export const metadata_blog: Metadata = {
         description:
             "Expert tips and insights on interior fit outs in Dubai. Learn about lighting, materials, retail design, and more from Space Sculpt.",
         url: "https://www.spacesculpt.ae/blog",
-        images: ["https://www.spacesculpt.ae/images/blog-banner.jpg"]
+        images: [`https://www.spacesculpt.ae${assets.blogsHeroImage}`]
     },
     alternates: {
         canonical: "https://www.spacesculpt.ae/blog"
@@ -152,7 +152,7 @@ export const metadata_contact = {
         description:
             "Have questions or need a quote? Contact Space Sculpt for expert interior design and fit out solutions in Dubai.",
         url: "https://www.spacesculpt.ae/contact",
-        images: ["https://www.spacesculpt.ae/images/contact-banner.jpg"]
+        images: [`https://www.spacesculpt.ae${assets.contactHero1}`]
     },
     alternates: {
         canonical: "https://www.spacesculpt.ae/contact"

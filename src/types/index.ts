@@ -23,9 +23,17 @@ interface AboutUsPageData {
 interface Service {
     id: string;
     imgSrc: string;
+    cardTitle:string;
     title: string;
     icon: string;
-    description: string
+    description: string;
+    metatags: MetaTagType;
+}
+
+interface MetaTagType {
+    title: string;
+    description: string;
+    imageAlts: string[];
 }
 
 interface Testimonial {

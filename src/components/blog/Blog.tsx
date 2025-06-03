@@ -45,7 +45,7 @@ const Blog = () => {
             "name": "Space Sculpt",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://spacesculpt.ae/logo.png"
+                "url": "https://spacesculpt.ae/logo.svg"
             }
         },
         "datePublished": blogData.date,
@@ -58,7 +58,7 @@ const Blog = () => {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
             />
-            <BlogHeader blog={blogData} />
+            <BlogHeader title={blogData.title} imgAlt={blogData.title} imgSrc={blogData.imgSrc} />
             <Suspense fallback={<p>Loading blog...</p>}>
                 <BlogComponent />
             </Suspense>

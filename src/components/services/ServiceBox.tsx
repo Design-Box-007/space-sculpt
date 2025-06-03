@@ -18,8 +18,6 @@ const ServiceBox: React.FC<{ service: Service }> = ({ service }) => {
         alt={service.title}
         className="rounded-xl object-cover w-full h-full"
       />
-
-      <Link href={`/services/${formatToHyphenated(service.title)}`} passHref>
         <motion.div
           className="bg-white w-[95%] mx-auto rounded-md p-5 z-20 flex flex-col justify-between gap-5 mt-4 absolute bottom-3 left-0 right-0"
           initial={{ scale: 0.8, opacity: 0 }}
@@ -34,14 +32,13 @@ const ServiceBox: React.FC<{ service: Service }> = ({ service }) => {
               height={20}
               alt={service.title}
             />
-            <span className="font-semibold text-lg">{service.title}</span>
+            <span className="font-semibold text-lg">{service.cardTitle}</span>
           </div>
 
           <p className="italic font-normal text-xl">
-            {service.description}
+            {service.description}<Link href={`/services/${formatToHyphenated(service.title)}`} className='font-bold' passHref>...Read More</Link>
           </p>
         </motion.div>
-      </Link>
     </div>
   );
 };

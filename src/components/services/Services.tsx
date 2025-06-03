@@ -10,8 +10,8 @@ const Services = () => {
     return (
         <section className='p-[10px] md:p-3 lg:p-5'>
             <Hero
-                heading='Crafted for Those Who Value <span class="text-primary">Design Excellence</span>'
-                content='Explore a range of innovative services that merge creativity, precision,<br/> and craftsmanship to transform your space.'
+                heading='Transforming Dubai Interiors with <span class="text-primary">Design Excellence</span>'
+                content='Discover bespoke interior fit out solutions that blend creativity, precision, and expert craftsmanship. From residential designs to commercial interiors, we bring your vision to life with style and functionality.'
                 ctaLink='/contact'
                 // ctaName='Get Free Consultations'
                 bgImage={assets.servicesHero}

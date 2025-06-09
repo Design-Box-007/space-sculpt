@@ -8,6 +8,7 @@ import { useParams } from "next/navigation";
 import { Suspense } from "react";
 import BLogHeader from "@/components/blog/BlogHeader";
 import { getServiceSchemaMarkup } from "@/utils/serviceSchema";
+import ServiceCTA from "../services/ServiceCTA";
 
 const componentMap = {
   service1: dynamic(() => import("@/data/Services/Service1")),
@@ -42,6 +43,7 @@ const Service = () => {
       <Suspense fallback={<p>Loading Service...</p>}>
         <ServiceComponent />
       </Suspense>
+      <ServiceCTA/>
       {schemaMarkup && (
         <script
           type="application/ld+json"

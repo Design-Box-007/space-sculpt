@@ -1,6 +1,6 @@
 'use client'
 
-import services from "@/data/services";
+import { services }  from "@/data/services";
 import { Service as ServiceType } from "@/types";
 import formatToHyphenated from "@/utils/formatPathName";
 import dynamic from "next/dynamic";

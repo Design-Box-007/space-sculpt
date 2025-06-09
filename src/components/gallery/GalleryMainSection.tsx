@@ -1,18 +1,17 @@
 'use client'
 
 import React, { useState } from 'react';
-import gallery from '@/data/gallery';
-import services from '@/data/services';
-import GalleryCard from '../comman/GalleryCard';
-import { Gallery, Service } from '@/types';
+import { serviceCardGroups, ServiceCardGroupsType, services } from '@/data/services';
+import {Service } from '@/types';
 import { motion } from 'framer-motion';
+import GalleryGroupCard from './GalleryGroupCard';
 
 
 const GalleryMainSection = () => {
-    const [selectedService, setSelectedService] = useState(services[0].id);
+    const [selectedService, setSelectedService] = useState("all");
 
     // Filter gallery items based on selected service
-    const filteredGallery = selectedService === 'all' ? gallery : gallery.filter(item => item.serviceId === selectedService);
+    const filteredGallery = selectedService === 'all' ? serviceCardGroups : serviceCardGroups.filter(item => item.serviceId === selectedService);
 
     return (
         <section className='px-4 py-10'>
@@ -46,7 +45,7 @@ const GalleryMainSection = () => {
                             }`}
                         onClick={() => setSelectedService(service.id)}
                     >
-                        {service.title}
+                        {service.cardTitle}
                     </button>
                 ))}
             </div>
@@ -54,8 +53,8 @@ const GalleryMainSection = () => {
 
             {/* Gallery Grid */}
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-                {filteredGallery.map((item: Gallery, index: number) => (
-                    <GalleryCard data={item} key={index} />
+                {filteredGallery.map((item: ServiceCardGroupsType, index: number) => (
+                    <GalleryGroupCard card={item} key={index} />
                 ))}
             </div>
         </section>

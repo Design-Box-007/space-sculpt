@@ -13,7 +13,10 @@ const Navbar = () => {
 
     const pathname = usePathname();
 
-    const NavbarBackgroundImage = navLinks.find((link) => link.link === pathname)?.bgImage as string;
+    const NavbarBackgroundImage = navLinks.find((link) =>
+        pathname.startsWith(link.link)
+    )?.bgImage as string;
+
 
     // Function to close the mobile menu
     const onLinkClicked = () => {

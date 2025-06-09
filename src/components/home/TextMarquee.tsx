@@ -11,7 +11,6 @@ const TextMarquee: React.FC = () => {
         direction="left"
         gradient={false} // disables fade gradient
         speed={90}       // adjust speed as needed
-        loop={1}
       >
         <span className="whitespace-nowrap text-[100px] leading-[150px] lg:text-[160px] lg:leading-[216px] font-medium mx-5">
           Experience the art of interior transformation
@@ -23,7 +22,6 @@ const TextMarquee: React.FC = () => {
         direction="right"
         gradient={false}
         speed={90}
-        loop={1}
       >
         <span className="whitespace-nowrap text-[100px] leading-[150px] lg:text-[160px] lg:leading-[216px] font-medium mx-5">
           Where every detail is crafted to perfection.

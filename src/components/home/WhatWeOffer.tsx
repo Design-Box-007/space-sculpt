@@ -1,6 +1,6 @@
 'use client'
 
-import services from '@/data/services';
+import { services }  from '@/data/services';
 import { Service } from '@/types';
 import { ArrowRightCircle } from 'lucide-react';
 import Image from 'next/image';
@@ -70,7 +70,7 @@ const WhatWeOffer = () => {
                         icon={project.icon}
                         imgSrc={project.imgSrc}
                         key={index}
-                        title={project.title}
+                        title={project.cardTitle}
                     />
                 ))}
             </div>

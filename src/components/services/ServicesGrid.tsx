@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import services from '@/data/services';
+import { services }  from '@/data/services';
 import { Service } from '@/types';
 import ServiceBox from './ServiceBox';
 import { motion } from 'framer-motion';

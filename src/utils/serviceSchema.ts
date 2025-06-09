@@ -1,6 +1,6 @@
 import { Service as ServiceType } from "@/types";
 import formatToHyphenated from "./formatPathName";
-import services from "@/data/services";
+import { services }  from "@/data/services";
 
 export const getServiceSchemaMarkup = (serviceName: string) => {
   const ServiceData = services.find(

@@ -51,7 +51,7 @@ const assets: Assets = {
     servicesHero: "/images/servicesHero.png",
 
     // gallery images
-    galleryHero: "/images/galleryHeroImage.png",
+    galleryHero: "/images/galleryHeroImage2.jpg",
     classicRenovation: "/images/gallery/classic-renovation.png",
     customSignage: "/images/gallery/custom-signage.png",
     minimalisticOfficeMakeover: "/images/gallery/minimalistic-office-makeover.png",
@@ -62,16 +62,22 @@ const assets: Assets = {
     // rennovation-remodelling
 
 
-    rennovationRemodelling1: "/images/rennovation-remodeling/rennovation-remodelling-1.jpg",
-    rennovationRemodelling2: "/images/rennovation-remodeling/rennovation-remodelling-2.jpg",
-    rennovationRemodelling3: "/images/rennovation-remodeling/rennovation-remodelling-3.jpg",
-    rennovationRemodelling4: "/images/rennovation-remodeling/rennovation-remodelling-4.jpg",
-    rennovationRemodelling5: "/images/rennovation-remodeling/rennovation-remodelling-5.jpg",
-    rennovationRemodelling6: "/images/rennovation-remodeling/rennovation-remodelling-6.jpg",
-    rennovationRemodelling7: "/images/rennovation-remodeling/rennovation-remodelling-7.jpg",
-    rennovationRemodelling8: "/images/rennovation-remodeling/rennovation-remodelling-8.jpg",
-    rennovationRemodelling9: "/images/rennovation-remodeling/rennovation-remodelling-9.jpg",
-    rennovationRemodelling10: "/images/rennovation-remodeling/rennovation-remodelling-10.jpg",
+    rennovationRemodelling1: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-1.jpg",
+    rennovationRemodelling2: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-2.jpg",
+    rennovationRemodelling3: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-3.jpg",
+    rennovationRemodelling4: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-4.jpg",
+    rennovationRemodelling5: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-5.jpg",
+    rennovationRemodelling6: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-6.jpg",
+    rennovationRemodelling7: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-7.jpg",
+    rennovationRemodelling8: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-8.jpg",
+    rennovationRemodelling9: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-9.jpg",
+    rennovationRemodelling10: "/images/rennovation-remodeling/gymnation-khalidhiya/rennovation-remodelling-10.jpg",
+
+    rennovationRemodelling11: "/images/rennovation-remodeling/prep-and-co/rennovation-remodelling-11.jpg",
+    rennovationRemodelling12: "/images/rennovation-remodeling/prep-and-co/rennovation-remodelling-12.jpg",
+    rennovationRemodelling13: "/images/rennovation-remodeling/prep-and-co/rennovation-remodelling-13.jpg",
+
+
 
     // contact us 
 

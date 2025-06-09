@@ -1,5 +1,5 @@
 import Service from '@/components/service/Service'
-import services from '@/data/services';
+import { services }  from '@/data/services';
 import formatToHyphenated from '@/utils/formatPathName';
 import React from 'react'
 

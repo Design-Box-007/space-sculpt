@@ -49,7 +49,7 @@ const About = () => {
 
       <div className="flex flex-col lg:flex-row gap-2">
         <motion.h1
-          className="font-medium text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] leading-[50px] sm:leading-[65px] md:leading-[80px] lg:leading-[94.1px] flex-1"
+          className="font-medium text-[40px] sm:text-[50px] flex-1"
           variants={headingVariant}
           initial="hidden"
           whileInView="visible"

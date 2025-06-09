@@ -23,7 +23,7 @@ interface AboutUsPageData {
 interface Service {
     id: string;
     imgSrc: string;
-    cardTitle:string;
+    cardTitle: string;
     title: string;
     icon: string;
     description: string;
@@ -50,6 +50,7 @@ interface Gallery {
     contentTitle: string;
     content: string;
     serviceId: string;
+    serviceGroupId: string;
 }
 
 

@@ -1,9 +1,9 @@
 import { Service } from "@/types";
 import assets from "./assets";
 
-const services: Service[] = [
+export const services: Service[] = [
     {
-        id: "Service1",
+        id: "service1",
         title: "Residential Interior Design in Dubai - Luxury Home Interiors by Space Sculpt",
         cardTitle: "Residential Interiors",
         imgSrc: assets.residentialInteriors,
@@ -18,7 +18,7 @@ const services: Service[] = [
         }
     },
     {
-        id: "Service2",
+        id: "service2",
         title: "Commercial Interior Design in Dubai – Elevate Your Business Environment",
         cardTitle: "Commercial Spaces",
         imgSrc: assets.commerceSpace,
@@ -33,7 +33,7 @@ const services: Service[] = [
         }
     },
     {
-        id: "Service3",
+        id: "service3",
         title: "Renovation and Remodeling Services in Dubai – Reinvent Your Space with Expert Craftsmanship",
         cardTitle: "Renovation & Remodeling",
         imgSrc: assets.renovationRemodeling,
@@ -48,7 +48,7 @@ const services: Service[] = [
         }
     },
     {
-        id: "Service4",
+        id: "service4",
         title: "Concept Design Services in Dubai – Where Vision Meets Creative Precision",
         cardTitle: "Concept Design",
         imgSrc: assets.conceptDesign,
@@ -67,7 +67,7 @@ const services: Service[] = [
         }
     },
     {
-        id: "Service5",
+        id: "service5",
         title: "Signage Solutions in Dubai – Where Interior Design Meets Visual Impact",
         cardTitle: "Signage",
         imgSrc: assets.sinage,
@@ -86,7 +86,7 @@ const services: Service[] = [
         }
     },
     {
-        id: "Service6",
+        id: "service6",
         title: "Laser and CNC Cutting Services in Dubai – Precision for Interior Excellence",
         cardTitle: "Laser & CNC Cutting",
         imgSrc: assets.lasercutting,
@@ -106,4 +106,32 @@ const services: Service[] = [
     },
 ];
 
-export default services;
+export interface ServiceCardGroupsType {
+    id: string;
+    title: string;
+    description: string;
+    location?: string;
+    serviceId:string;
+}
+
+export const serviceCardGroups: ServiceCardGroupsType[] = [
+    {
+        id: "scg_1",
+        title: "Gymnation Khalidiya",
+        location: "AbuDhabi",
+        description: "A full-scale interior fit-out transforming Gymnation Khalidya into a dynamic workout space.",
+        serviceId:"service3"
+    },
+
+
+    {
+        id: "scg_2",
+        title: "Prep And Co",
+        location: "Mirdiff City Centre",
+        description: "Custom fit-out for Prep and Co, blending modern design with smart space planning for a health-driven vibe",
+        serviceId:"service3"
+    },
+]
+
+
+

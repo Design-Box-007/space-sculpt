@@ -10,7 +10,7 @@ const gallery: Gallery[] = [
         imgSrc: assets.about2,
         contentTitle: "Modern Elegance Residential",
         icon: "icon",
-        serviceId: "service1"
+        serviceId: "service1", serviceGroupId: "scg_0"
     },
     {
         title: "A Minimalist Office Makeover",
@@ -18,7 +18,7 @@ const gallery: Gallery[] = [
         imgSrc: assets.minimalisticOfficeMakeover,
         contentTitle: "Modern Elegance Residential",
         icon: "icon",
-        serviceId: "service1"
+        serviceId: "service1", serviceGroupId: "scg_0"
     },
     {
         title: "Classic Renovation Project",
@@ -26,7 +26,7 @@ const gallery: Gallery[] = [
         imgSrc: assets.classicRenovation,
         contentTitle: "Modern Elegance Residential",
         icon: "icon",
-        serviceId: "service1"
+        serviceId: "service1", serviceGroupId: "scg_0"
     },
     {
         title: "Concept Sketches That Inspire",
@@ -34,7 +34,7 @@ const gallery: Gallery[] = [
         imgSrc: assets.conceptSketches,
         contentTitle: "Modern Elegance Residential",
         icon: "icon",
-        serviceId: "service1"
+        serviceId: "service1", serviceGroupId: "scg_0"
     },
     {
         title: "Custom Signage That Stands Out",
@@ -42,7 +42,7 @@ const gallery: Gallery[] = [
         imgSrc: assets.customSignage,
         contentTitle: "Modern Elegance Residential",
         icon: "icon",
-        serviceId: "service1"
+        serviceId: "service1", serviceGroupId: "scg_0"
     },
     {
         title: "Intricate Laser & CNC Details",
@@ -50,20 +50,23 @@ const gallery: Gallery[] = [
         imgSrc: assets.intricateCncLaserTech,
         contentTitle: "Modern Elegance Residential",
         icon: "icon",
-        serviceId: "service1"
+        serviceId: "service1", serviceGroupId: "scg_0"
     },
 
     // resdential-remodelling
-    { title: "Resdetial-Remodelling-1", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling1, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-2", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling2, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-3", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling3, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-4", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling4, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-5", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling5, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-6", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling6, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-7", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling7, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-8", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling8, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-9", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling9, icon: "icon", serviceId: "service3" },
-    { title: "Resdetial-Remodelling-10", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling10, icon: "icon", serviceId: "service3" },
+    { title: "Resdetial-Remodelling-1", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling1, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-2", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling2, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-3", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling3, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-4", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling4, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-5", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling5, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-6", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling6, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-7", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling7, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-8", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling8, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+    { title: "Resdetial-Remodelling-9", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling9, icon: "icon", serviceId: "service3", serviceGroupId: "scg_1" },
+
+    { title: "Resdetial-Remodelling-11", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling11, icon: "icon", serviceId: "service3", serviceGroupId: "scg_2" },
+    { title: "Resdetial-Remodelling-12", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling12, icon: "icon", serviceId: "service3", serviceGroupId: "scg_2" },
+    { title: "Resdetial-Remodelling-13", content: "content", contentTitle: "Rennovation-Remodeling", imgSrc: assets.rennovationRemodelling13, icon: "icon", serviceId: "service3", serviceGroupId: "scg_2" },
 ]
 
 export default gallery;

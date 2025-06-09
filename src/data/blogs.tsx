@@ -38,7 +38,7 @@ export const blogListData: Blog[] = [
     {
         title: "How Lighting Plays a Vital Role in Interior Fit-Out",
         description: "Lighting is one of the most powerful yet underestimated elements in any commercial interior fit-out",
-        imgSrc: assets.Blog4,
+        imgSrc: assets.Blog5,
         component: "DummyBlog",
         date: "2025-06-09",
         updatedDate: "2025-06-09"

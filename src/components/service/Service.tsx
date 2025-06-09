@@ -1,6 +1,6 @@
 'use client'
 
-import { services }  from "@/data/services";
+import { services } from "@/data/services";
 import { Service as ServiceType } from "@/types";
 import formatToHyphenated from "@/utils/formatPathName";
 import dynamic from "next/dynamic";
@@ -10,12 +10,12 @@ import BLogHeader from "@/components/blog/BlogHeader";
 import { getServiceSchemaMarkup } from "@/utils/serviceSchema";
 
 const componentMap = {
-  Service1: dynamic(() => import("@/data/Services/Service1")),
-  Service2: dynamic(() => import("@/data/Services/Service2")),
-  Service3: dynamic(() => import("@/data/Services/Service3")),
-  Service4: dynamic(() => import("@/data/Services/Service4")),
-  Service5: dynamic(() => import("@/data/Services/Service5")),
-  Service6: dynamic(() => import("@/data/Services/Service6")),
+  service1: dynamic(() => import("@/data/Services/Service1")),
+  service2: dynamic(() => import("@/data/Services/Service2")),
+  service3: dynamic(() => import("@/data/Services/Service3")),
+  service4: dynamic(() => import("@/data/Services/Service4")),
+  service5: dynamic(() => import("@/data/Services/Service5")),
+  service6: dynamic(() => import("@/data/Services/Service6")),
 };
 
 

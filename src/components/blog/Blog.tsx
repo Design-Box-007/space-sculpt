@@ -13,6 +13,8 @@ const componentMap = {
     Blog1: dynamic(() => import("@/data/Blogs/Blog1")),
     Blog2: dynamic(() => import("@/data/Blogs/Blog2")),
     Blog3: dynamic(() => import("@/data/Blogs/Blog3")),
+    Blog4: dynamic(() => import("@/data/Blogs/Blog4")),
+    Blog5: dynamic(() => import("@/data/Blogs/Blog5")),
     // Add more if needed
 };
 

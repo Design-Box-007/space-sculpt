@@ -26,22 +26,23 @@ export const blogListData: Blog[] = [
         component: "Blog3",
         date: "2025-03-25",
         updatedDate: "2025-03-25"
-    }
-    
-    // {
-    //     title: "Smart Furniture for Small Apartments",
-    //     description: "Explore space-saving furniture solutions designed for compact living areas.",
-    //     imgSrc: assets.Blog4,
-    //     component: "DummyBlog"
-
-    // },
-    // {
-    //     title: "Sustainable Interior Design",
-    //     description: "Learn how to incorporate eco-friendly materials and practices into your home decor.",
-    //     imgSrc: assets.Blog5,
-    //     component: "DummyBlog"
-
-    // },
+    },
+    {
+        title: "Commercial Space Interior Fit-Out: A Complete Guide to Office Transformation",
+        description: "A commercial interior fit-out is the key to transforming an empty or outdated area into a productive",
+        imgSrc: assets.Blog4,
+        component: "Blog5",
+        date: "2025-06-09",
+        updatedDate: "2025-06-09"
+    },
+    {
+        title: "How Lighting Plays a Vital Role in Interior Fit-Out",
+        description: "Lighting is one of the most powerful yet underestimated elements in any commercial interior fit-out",
+        imgSrc: assets.Blog4,
+        component: "DummyBlog",
+        date: "2025-06-09",
+        updatedDate: "2025-06-09"
+    },
     // {
     //     title: "Bohemian Style: A Cozy Home Makeover",
     //     description: "Find out how to achieve a relaxed, artistic, and warm bohemian-style home.",
@@ -49,8 +50,7 @@ export const blogListData: Blog[] = [
     //     component: "DummyBlog"
 
     // },
-    // {
-    //     title: "Luxury Interior Designs on a Budget",
+    // {    //     title: "Luxury Interior Designs on a Budget",
     //     description: "Affordable ways to bring a touch of luxury into your home without breaking the bank.",
     //     imgSrc: assets.Blog7,
     //     component: "DummyBlog"

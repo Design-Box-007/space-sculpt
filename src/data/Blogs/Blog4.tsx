@@ -122,12 +122,12 @@ export default function Blog4() {
       <section className="space-y-4">
         <h2 className="custom-h2">Final Thoughts</h2>
         <p className="custom-p">
-          A well-planned commercial fit-out is more than just interior decoration. It’s a strategic investment that can
+          A well-planned commercial fit-out is more than just interior decoration. {"It’s"} a strategic investment that can
           reshape the way your business operates and how your brand is perceived. From creating a more productive
           workspace to impressing potential clients, the impact of a professional fit-out is long-lasting.
         </p>
         <p className="custom-p">
-          If you're ready to explore your fit-out options, get in touch with a trusted commercial interior specialist to
+          If {"you're"} ready to explore your fit-out options, get in touch with a trusted commercial interior specialist to
           start planning your ideal business environment.
         </p>
       </section>

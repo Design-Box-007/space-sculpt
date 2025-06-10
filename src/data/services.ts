@@ -4,6 +4,7 @@ import assets from "./assets";
 export const services: Service[] = [
     {
         id: "service1",
+        component:"Service1",
         title: "Residential Interior Design in Dubai - Luxury Home Interiors by Space Sculpt",
         cardTitle: "Residential Interiors",
         imgSrc: assets.residentialInteriors,
@@ -19,6 +20,7 @@ export const services: Service[] = [
     },
     {
         id: "service2",
+        component:"Service2",
         title: "Commercial Interior Design in Dubai – Elevate Your Business Environment",
         cardTitle: "Commercial Spaces",
         imgSrc: assets.commerceSpace,
@@ -34,6 +36,7 @@ export const services: Service[] = [
     },
     {
         id: "service3",
+        component:"Service3",
         title: "Renovation and Remodeling Services in Dubai – Reinvent Your Space with Expert Craftsmanship",
         cardTitle: "Renovation & Remodeling",
         imgSrc: assets.renovationRemodeling,
@@ -49,6 +52,7 @@ export const services: Service[] = [
     },
     {
         id: "service4",
+        component:"Service4",
         title: "Concept Design Services in Dubai – Where Vision Meets Creative Precision",
         cardTitle: "Concept Design",
         imgSrc: assets.conceptDesign,
@@ -68,6 +72,7 @@ export const services: Service[] = [
     },
     {
         id: "service5",
+        component:"Service5",
         title: "Signage Solutions in Dubai – Where Interior Design Meets Visual Impact",
         cardTitle: "Signage",
         imgSrc: assets.sinage,
@@ -87,6 +92,7 @@ export const services: Service[] = [
     },
     {
         id: "service6",
+        component:"Service6",
         title: "Laser and CNC Cutting Services in Dubai – Precision for Interior Excellence",
         cardTitle: "Laser & CNC Cutting",
         imgSrc: assets.lasercutting,

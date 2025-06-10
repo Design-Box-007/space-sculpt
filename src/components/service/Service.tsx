@@ -11,12 +11,12 @@ import { getServiceSchemaMarkup } from "@/utils/serviceSchema";
 import ServiceCTA from "../services/ServiceCTA";
 
 const componentMap = {
-  service1: dynamic(() => import("@/data/Services/Service1")),
-  service2: dynamic(() => import("@/data/Services/Service2")),
-  service3: dynamic(() => import("@/data/Services/Service3")),
-  service4: dynamic(() => import("@/data/Services/Service4")),
-  service5: dynamic(() => import("@/data/Services/Service5")),
-  service6: dynamic(() => import("@/data/Services/Service6")),
+  Service1: dynamic(() => import("@/data/Services/Service1")),
+  Service2: dynamic(() => import("@/data/Services/Service2")),
+  Service3: dynamic(() => import("@/data/Services/Service3")),
+  Service4: dynamic(() => import("@/data/Services/Service4")),
+  Service5: dynamic(() => import("@/data/Services/Service5")),
+  Service6: dynamic(() => import("@/data/Services/Service6")),
 };
 
 
@@ -31,7 +31,7 @@ const Service = () => {
 
   const { metatags, title, imgSrc } = ServiceData;
 
-  const ServiceComponent = componentMap[ServiceData.id as keyof typeof componentMap];
+  const ServiceComponent = componentMap[ServiceData.component as keyof typeof componentMap];
 
   if (!ServiceComponent) return <>Service NOT FOUND</>;
 

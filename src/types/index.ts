@@ -22,6 +22,7 @@ interface AboutUsPageData {
 
 interface Service {
     id: string;
+    component:string;
     imgSrc: string;
     cardTitle: string;
     title: string;

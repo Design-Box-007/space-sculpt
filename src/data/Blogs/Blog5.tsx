@@ -133,7 +133,7 @@ export default function Blog5() {
           business goals.
         </p>
         <p className="custom-p">
-          If you're planning a commercial interior fit-out, make sure to prioritize lighting design as a strategic
+          If {"you're"} planning a commercial interior fit-out, make sure to prioritize lighting design as a strategic
           element—not just a finishing touch.
         </p>
       </section>

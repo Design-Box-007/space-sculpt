@@ -5,7 +5,7 @@ export default function Blog4() {
         <h2 className="custom-h2">Introduction</h2>
         <p className="custom-p">
           Planning to design or upgrade your commercial space? A commercial interior fit-out is the key to transforming
-          an empty or outdated area into a productive, branded, and people-focused workplace. Whether it's an office,
+          an empty or outdated area into a productive, branded, and people-focused workplace. Whetherd {"it's"} an office,
           retail store, or co-working hub, the right fit-out can drive performance, reflect your brand identity, and
           support business growth.
         </p>

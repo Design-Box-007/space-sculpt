@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 // Base URL (update as needed)
 const BASE_URL = 'https://www.spacesculpt.ae';

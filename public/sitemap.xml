@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://spacesculpt.ae/</loc>
-    <priority>1.0</priority>
+    <loc>https://www.spacesculpt.ae/</loc>
     <changefreq>daily</changefreq>
+    <priority>1</priority>
   </url>
   <url>
-    <loc>http://spacesculpt.ae/about</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://spacesculpt.ae/contact</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://spacesculpt.ae/gallery</loc>
-    <priority>0.7</priority>
+    <loc>https://www.spacesculpt.ae/about</loc>
     <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>http://spacesculpt.ae/services</loc>
-    <priority>0.7</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>http://spacesculpt.ae/blogs</loc>
     <priority>0.9</priority>
-    <changefreq>daily</changefreq>
   </url>
-
-  <!-- Dynamic Blog URLs -->
   <url>
-    <loc>http://spacesculpt.ae/blogs/the-importance-of-lighting-in-dubais-interior-fit-outs</loc>
+    <loc>https://www.spacesculpt.ae/contact</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/gallery</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/blogs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/blogs/the-importance-of-lighting-in-dubais-interior-fitouts-creating-the-right-ambiance</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>http://spacesculpt.ae/blogs/top-materials-for-interior-fit-outs-in-dubai</loc>
-    <priority>0.7</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>http://spacesculpt.ae/blogs/interior-fit-out-for-dubais-retail-sector</loc>
-    <priority>0.6</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>http://spacesculpt.ae/blogs/smart-furniture-for-small-apartments</loc>
-    <priority>0.6</priority>
-    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://spacesculpt.ae/blogs/sustainable-interior-design</loc>
-    <priority>0.6</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.spacesculpt.ae/blogs/top-materials-for-interior-fitouts-in-dubai-from-marble-to-sustainable-alternatives</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://spacesculpt.ae/blogs/bohemian-style-a-cozy-home-makeover</loc>
-    <priority>0.6</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.spacesculpt.ae/blogs/interior-fitout-for-dubais-retail-sector-how-to-design-engaging-shopping-experiences</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://spacesculpt.ae/blogs/luxury-interior-designs-on-a-budget</loc>
-    <priority>0.6</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.spacesculpt.ae/blogs/commercial-space-interior-fitout-a-complete-guide-to-office-transformation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://spacesculpt.ae/blogs/the-art-of-wall-decor</loc>
-    <priority>0.6</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.spacesculpt.ae/blogs/how-lighting-plays-a-vital-role-in-interior-fitout</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://spacesculpt.ae/blogs/modern-kitchen-designs-that-inspire</loc>
-    <priority>0.6</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.spacesculpt.ae/services/residential-interior-design-in-dubai-luxury-home-interiors-by-space-sculpt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/services/commercial-interior-design-in-dubai-stylish-office-spaces-by-space-sculpt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/services/retail-interior-design-in-dubai-engaging-shopping-experiences-by-space-sculpt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/services/office-interior-design-in-dubai-functional-and-stylish-workspace-by-space-sculpt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spacesculpt.ae/services/villa-interior-design-in-dubai-luxurious-living-spaces-by-space-sculpt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

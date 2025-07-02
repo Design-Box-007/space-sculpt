@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/comman/Navbar";
 import Footer from "@/components/comman/Footer";
 import { ToastContainer, Zoom } from "react-toastify";
+import Script from "next/script";
 
 
 export const metadata: Metadata = {
@@ -32,6 +33,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable}`}>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WVB2BC57SL"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WVB2BC57SL');
+          `}
+        </Script>
         <ToastContainer
           position="top-center"
           autoClose={3000}

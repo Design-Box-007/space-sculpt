@@ -8,17 +8,17 @@ import { motion } from 'framer-motion';
 const AboutHero = () => {
     return (
 
-        <section className='text-white w-full flex flex-col justify-end items-center relative rounded-xl overflow-hidden h-screen'>
+        <section className='text-white w-full flex flex-col justify-end items-center relative rounded-xl overflow-hidden h-[500px]'>
             <Image
                 loading='eager'
                 src={assets.aboutHero}
                 width={1153}
                 height={641}
-                alt="bg"
-                className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.7] top-0 right-0 left-0 object-cover"
+                alt="Modern interior design featuring red and white color tones, with a red sofa, matching carpet, indoor plant in a pot, wall-mounted artwork, and contemporary steps leading to an upper level"
+                className="absolute -z-10 object-cover object-center w-full h-full rounded-3xl  brightness-[0.7] top-0 right-0 left-0 "
             />
             <motion.h1
-                className='font-bold text-[22vw] leading-[.7] text-center'
+                className='font-bold text-7xl leading-[.7] text-center mb-[200px]'
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}

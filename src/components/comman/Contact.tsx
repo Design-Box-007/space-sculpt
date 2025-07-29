@@ -11,7 +11,7 @@ const Contact = () => {
         <section id='contact' className='px-4 py-5 space-y-[56px]'>
 
             <motion.h1
-                className="text-5xl text-secondary font-medium"
+                className="text-6xl text-secondary font-medium"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.5 }}

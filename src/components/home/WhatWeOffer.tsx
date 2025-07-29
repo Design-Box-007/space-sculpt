@@ -11,14 +11,14 @@ import { motion } from 'framer-motion';
 
 const ServiceCard: React.FC<Pick<Service, 'imgSrc' | 'title' | 'icon'>> = ({ imgSrc, title, icon }) => {
     return (
-        <div className="h-[445px] rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative">
+        <div className="h-fit rounded-2xl overflow-hidden bg-white flex flex-col justify-between relative">
             <Image
                 loading="lazy"
                 src={imgSrc}
                 width={445}
                 height={445}
                 alt={title}
-                className="rounded-xl object-cover w-full h-full"
+                className="rounded-xl object-cover w-full aspect-[4/3]"
             />
 
             <Link href={`/services`} passHref>
@@ -45,7 +45,7 @@ const WhatWeOffer = () => {
         <section className="py-10 px-4">
 
             <motion.h1
-                className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium text-left"
+                className="text-4xl sm:text-6xl font-medium text-left"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
@@ -54,7 +54,7 @@ const WhatWeOffer = () => {
                 What We Offer
             </motion.h1>
             <motion.h5
-                className="text-xl md:text-3xl lg:text-[40px] leading-[32px] sm:leading-[42px] md:leading-[48px] lg:leading-[54px] text-gray-600 text-left mt-2"
+                className="text-xl md:text-3xl lg:text-[38px] leading-[32px] sm:leading-[42px] md:leading-[48px] lg:leading-[54px] text-gray-600 text-left mt-2"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}

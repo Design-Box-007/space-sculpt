@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonials }) => {
     return (
-        <div className="h-auto lg:min-h-[700px] grid grid-cols-1 grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 w-full mt-8 mx-auto">
+        <div className="h-auto lg:min-h-[575px] grid grid-cols-1 grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 w-full mt-8 mx-auto">
             {testimonials.map((item: Testimonial, index: number) => (
                 <div
                     key={index}
@@ -27,7 +27,7 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({ testimonia
                 >
                     {/* Backdrop blur box fades in */}
                     <motion.div
-                        className="bg-[#D8D8D833] backdrop-blur-[30px] p-[18px] rounded-[18px] flex flex-col gap-4 justify-between lg:min-h-[280px]"
+                        className="bg-[#D8D8D833] backdrop-blur-[30px] p-[18px] rounded-[18px] flex flex-col gap-4 justify-between lg:min-h-[250px]"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true, amount: 0.5 }}
@@ -61,7 +61,7 @@ const Testimonials = () => {
                 <div className="w-full lg:w-3/4 flex flex-col justify-between">
                     {/* "What Our Clients" animates from left to right */}
                     <motion.h1
-                        className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-black font-medium"
+                        className="text-4xl sm:text-5xl md:text-6xl text-black font-medium"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.5 }}
@@ -71,7 +71,7 @@ const Testimonials = () => {
                     </motion.h1>
                     {/* "Say About Us" animates from left to right with a slight delay */}
                     <motion.h3
-                        className="text-4xl sm:text-6xl md:text-7xl lg:text-[80px] leading-8 lg:leading-[108px]"
+                        className="text-4xl sm:text-5xl md:text-6xl leading-8 lg:leading-[108px]"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.5 }}

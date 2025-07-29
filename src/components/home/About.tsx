@@ -43,11 +43,11 @@ const About = () => {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1 }}
       >
-        <p>About us</p>
-        <InfoIcon size={20} color="#D72638" />
+        <p className='text-5xl sm:text-6xl'>About us</p>
+        {/* <InfoIcon size={20} color="#D72638" /> */}
       </motion.div>
 
-      <div className="flex flex-col lg:flex-row gap-2">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-2">
         <motion.h1
           className="font-medium text-[40px] sm:text-[50px] flex-1"
           variants={headingVariant}

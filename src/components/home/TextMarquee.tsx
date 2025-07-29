@@ -12,7 +12,7 @@ const TextMarquee: React.FC = () => {
         gradient={false} // disables fade gradient
         speed={90}       // adjust speed as needed
       >
-        <span className="whitespace-nowrap text-[100px] leading-[150px] lg:text-[160px] lg:leading-[216px] font-medium mx-5">
+        <span className="whitespace-nowrap text-[70px] leading-[105px] lg:text-[110px] lg:leading-[165px] font-medium mx-5">
           Experience the art of interior transformation
         </span>
       </Marquee>
@@ -23,7 +23,7 @@ const TextMarquee: React.FC = () => {
         gradient={false}
         speed={90}
       >
-        <span className="whitespace-nowrap text-[100px] leading-[150px] lg:text-[160px] lg:leading-[216px] font-medium mx-5">
+        <span className="whitespace-nowrap text-[70px] leading-[105px] lg:text-[110px] lg:leading-[165px] font-medium mx-5">
           Where every detail is crafted to perfection.
         </span>
       </Marquee>

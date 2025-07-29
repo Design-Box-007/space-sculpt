@@ -32,7 +32,7 @@ const CardGrid = () => {
         <motion.div
           key={index}
           variants={cardVariants}
-          className={`p-5 min-h-[255px] rounded-lg border flex flex-col justify-between ${
+          className={`p-5 min-h-[200px] rounded-lg border flex flex-col gap-10 ${
             index % 2 === 0
               ? 'bg-transparent border-[#E1E1E1]'
               : 'bg-primary border-primary'
@@ -63,7 +63,7 @@ const AboutThird = () => {
     <section className="px-6 py-10 lg:py-20 space-y-8">
       {/* Heading */}
       <motion.h1
-        className="text-4xl sm:text-6xl md:text-8xl lg:text-[106px] leading-tight md:leading-[120px] lg:leading-[143px] text-center text-secondary font-medium"
+        className="text-4xl sm:text-5xl md:text-6xl leading-tight md:leading-[120px] lg:leading-[143px] text-center text-secondary font-medium"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

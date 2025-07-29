@@ -22,7 +22,7 @@ const BlurrySlider = () => {
         <section className="px-4 md:px-8 lg:px-16 overflow-hidden flex flex-col justify-center min-h-[50vh]">
 
             <motion.h4
-                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 sm:mb-8 text-center capitalize md:text-left"
+                className="text-3xl sm:text-5xl md:text-6xl font-semibold mb-6 sm:mb-8 text-center capitalize md:text-left"
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
@@ -34,7 +34,7 @@ const BlurrySlider = () => {
 
 
             {/* Image Container */}
-            <section className="flex w-full h-full justify-center border border-solid border-primary items-center relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
+            <section className="flex w-full h-full justify-center border border-solid items-center relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">
                 <div className="border-white flex justify-center items-center p-6 sm:p-10 md:p-12 lg:p-16 border-[3px] border-solid relative w-full h-full">
 
                     {/* Blurred Background Image */}
@@ -72,9 +72,9 @@ const BlurrySlider = () => {
                                 <Image
                                     src={images[currentIndex].src}
                                     alt="gallery-image"
-                                    width={1360}
+                                    width={500}
                                     height={500}
-                                    className="w-full h-full object-cover rounded-xl sm:rounded-2xl md:rounded-3xl"
+                                    className="w-full aspect-[21/9] object-cover rounded-xl sm:rounded-2xl md:rounded-3xl"
                                     loading='lazy'
                                 />
                             </motion.div>

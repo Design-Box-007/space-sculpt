@@ -6,15 +6,14 @@ import Footer from "@/components/comman/Footer";
 import { ToastContainer, Zoom } from "react-toastify";
 import Script from "next/script";
 
-
 export const metadata: Metadata = {
   title: "Space Sculpt",
-  description: "Space Sculpt transforms spaces with modern, stylish, and functional interior designs. Explore our work and get inspired!",
+  description:
+    "Space Sculpt transforms spaces with modern, stylish, and functional interior designs. Explore our work and get inspired!",
   other: {
     "google-site-verification": "FHO8xfEZFaPS-_zxN7BcW0EB4m-i6UzKqVhcJzO1qUg",
   },
 };
-
 
 // Load Satoshi Variable Font
 const satoshi = localFont({
@@ -23,7 +22,6 @@ const satoshi = localFont({
   variable: "--font-satoshi", // Custom CSS variable for Tailwind usage
   display: "swap",
 });
-
 
 export default function RootLayout({
   children,
@@ -59,8 +57,11 @@ export default function RootLayout({
           theme="dark"
           transition={Zoom}
         />
-        <Navbar />
-        {children}
+
+        <div className="max-w-[1440px] mx-auto">
+          <Navbar />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

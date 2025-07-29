@@ -59,7 +59,7 @@ const About = () => {
           Top solutions for all Interior works for commercial and home spaces.
         </motion.h1>
 
-        <div className="flex flex-col gap-2 justify-around flex-1">
+        <div className="flex flex-col gap-2 justify-around flex-1 text-justify">
           <motion.p
             className="text-lg sm:text-xl md:text-2xl font-normal text-secondary"
             variants={paragraphVariant}

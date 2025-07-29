@@ -9,7 +9,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-[500] rounded-t-2xl relative overflow-hidden  flex flex-col items-center justify-center">
+      <div className="w-full h-[500] relative overflow-hidden  flex flex-col items-center justify-center">
         <Image
           src={assets.FooterImage}
           loading="lazy"

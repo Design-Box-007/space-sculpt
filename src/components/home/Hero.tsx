@@ -30,6 +30,7 @@ const Hero = () => {
       <div className='text-lg w-[331px] text-left font-medium text-white border-b-primary border-b-2 border-solid absolute bottom-4 right-3'>
         Commercial Interior
       </div>
+      
 
     </section>
   )

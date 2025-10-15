@@ -1,9 +1,35 @@
-'use client'
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React from "react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { BsWhatsapp } from "react-icons/bs";
+
+// ✅ Transparent WhatsApp Button with full box shadow
+type WhatsappButtonProps = {
+  number: string;
+  message?: string;
+};
+const WHATSAPP_NUMBERS = ["+971508892829", "+971543811237"];
+const WhatsappButton = ({ number, message }: WhatsappButtonProps) => {
+  const baseNumber = number.replace(/\D/g, "");
+  const waLink = `https://wa.me/${baseNumber}${
+    message ? `?text=${encodeURIComponent(message)}` : ""
+  }`;
+
+  return (
+    <a
+      href={waLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-white text-white bg-transparent px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 shadow-[0_0_25px_rgba(255,255,255,0.3)] hover:shadow-[0_0_35px_rgba(255,255,255,0.5)] hover:bg-white/10 hover:scale-105 backdrop-blur-sm md:text-2xl font-montserrat"
+    >
+      <BsWhatsapp className="text-white text-xl" />
+      {number}
+    </a>
+  );
+};
 
 interface HeroProps {
   heading: string;
@@ -24,9 +50,16 @@ const contentVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const Hero: React.FC<HeroProps> = ({ heading, content, ctaName, ctaLink, ctaStatus = false, bgImage }) => {
+const Hero: React.FC<HeroProps> = ({
+  heading,
+  content,
+  ctaName,
+  ctaLink,
+  ctaStatus = false,
+  bgImage,
+}) => {
   return (
-    <section className="text-white w-full flex flex-col justify-end relative rounded-xl overflow-hidden min-h-screen max-[500px]:pt-[100px] p-8 sm:p-6 md:p-10 lg:p-12">
+    <section className="text-white w-full flex flex-col justify-center relative rounded-xl overflow-hidden min-h-screen max-[500px]:pt-[100px] p-8 sm:p-6 md:p-10 lg:p-12">
       <Image
         loading="eager"
         src={bgImage}
@@ -38,7 +71,7 @@ const Hero: React.FC<HeroProps> = ({ heading, content, ctaName, ctaLink, ctaStat
 
       <div className="text-left flex flex-col gap-6 sm:gap-4 md:gap-6 lg:gap-8">
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white font-medium capitalize"
+          className="text-4xl md:text-5xl lg:text-7xl text-white font-medium capitalize font-cinzel"
           dangerouslySetInnerHTML={{ __html: heading }}
           variants={headingVariants}
           initial="hidden"
@@ -73,6 +106,16 @@ const Hero: React.FC<HeroProps> = ({ heading, content, ctaName, ctaLink, ctaStat
       {/* <div className="hidden md:block sm:text-base md:text-lg sm:w-[250px] md:w-[300px] lg:w-[331px] text-left font-medium text-white border-b-primary border-b-2 border-solid absolute bottom-4 right-3">
         Commercial Interior
       </div> */}
+
+      <div className="absolute bottom-10 left-0 w-full flex flex-wrap justify-center items-center gap-4 px-4 text-center z-20">
+        {WHATSAPP_NUMBERS.map((number) => (
+          <WhatsappButton
+            key={number}
+            number={number}
+            message="Hi! I'm interested in your LED display solutions."
+          />
+        ))}
+      </div>
     </section>
   );
 };

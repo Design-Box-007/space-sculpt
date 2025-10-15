@@ -32,10 +32,10 @@ const ServiceBox: React.FC<{ service: Service }> = ({ service }) => {
               height={20}
               alt={service.title}
             />
-            <span className="font-semibold text-lg">{service.cardTitle}</span>
+            <span className="font-semibold text-lg font-cinzel">{service.cardTitle}</span>
           </div>
 
-          <p className="italic font-normal text-xl">
+          <p className="italic font-normal text-xl font-montserrat">
             {service.description}<Link href={`/services/${formatToHyphenated(service.title)}`} className='font-bold' passHref>...Read More</Link>
           </p>
         </motion.div>

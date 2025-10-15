@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 const AboutSecond = () => {
   return (
-    <section className="px-4 py-10 md:py-20 space-y-5 md:space-y-7">
+    <section className="px-4 py-10 space-y-5 md:space-y-7">
       {/* Title */}
-      <motion.h2
+      {/* <motion.h2
         className="font-bold text-4xl md:text-6xl leading-tight text-center md:text-left"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -18,11 +18,11 @@ const AboutSecond = () => {
       >
         Crafting <span className="text-primary">Spaces</span>, Shaping{" "}
         <span className="text-primary">Experiences</span>
-      </motion.h2>
+      </motion.h2> */}
 
       {/* Description */}
       <motion.p
-        className="font-normal text-xl md:text-2xl text-center md:text-left"
+        className="font-normal text-xl md:text-2xl text-center md:text-left font-montserrat"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
@@ -67,7 +67,7 @@ const AboutSecond = () => {
         <div className="relative z-20 bg-white p-4 md:p-[18px] rounded-lg md:rounded-[18px] space-y-3 md:space-y-5 lg:min-h-[280px] w-full">
           {/* "Our Journey of Design Excellence" (top to bottom) */}
           <motion.h2
-            className="font-bold text-3xl md:text-5xl lg:text-6xl text-center md:text-left"
+            className="font-bold text-3xl md:text-5xl lg:text-6xl text-center md:text-left font-cinzel"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -78,7 +78,7 @@ const AboutSecond = () => {
 
           {/* Founded paragraph (fade in only) */}
           <motion.p
-            className="font-normal text-lg md:text-[22px] md:leading-[29px] italic text-center md:text-left"
+            className="font-normal text-lg md:text-[22px] md:leading-[29px] italic text-center md:text-left font-montserrat"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -91,7 +91,7 @@ const AboutSecond = () => {
 
           {/* Quote (bottom to top) */}
           <motion.p
-            className="font-normal text-xl md:text-3xl text-primary italic text-center md:text-left"
+            className="font-normal text-xl md:text-3xl text-primary italic text-center md:text-left font-montserrat"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}

@@ -1,9 +1,9 @@
 "use client";
 
-import { aboutUsPageData } from '@/data/comman';
-import { AboutUsPageData } from '@/types';
-import React from 'react';
-import { motion } from 'framer-motion';
+import { aboutUsPageData } from "@/data/comman";
+import { AboutUsPageData } from "@/types";
+import React from "react";
+import { motion } from "framer-motion";
 
 const gridVariants = {
   visible: {
@@ -34,20 +34,20 @@ const CardGrid = () => {
           variants={cardVariants}
           className={`p-5 min-h-[200px] rounded-lg border flex flex-col gap-10 ${
             index % 2 === 0
-              ? 'bg-transparent border-[#E1E1E1]'
-              : 'bg-primary border-primary'
+              ? "bg-transparent border-[#E1E1E1]"
+              : "bg-primary border-primary"
           }`}
         >
           <h4
-            className={`text-3xl font-medium ${
-              index % 2 === 0 ? 'text-secondary' : 'text-white'
+            className={`text-3xl font-medium font-cinzel ${
+              index % 2 === 0 ? "text-secondary" : "text-white"
             }`}
           >
             {data.title}
           </h4>
           <p
-            className={`text-lg font-normal ${
-              index % 2 === 0 ? 'text-secondary' : 'text-white'
+            className={`text-lg font-normal font-montserrat ${
+              index % 2 === 0 ? "text-secondary" : "text-white"
             }`}
           >
             {data.content}
@@ -60,10 +60,10 @@ const CardGrid = () => {
 
 const AboutThird = () => {
   return (
-    <section className="px-6 py-10 lg:py-20 space-y-8">
+    <section className="px-6 mb-10 space-y-5">
       {/* Heading */}
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl leading-tight md:leading-[120px] lg:leading-[143px] text-center text-secondary font-medium"
+        className="text-4xl sm:text-5xl md:text-6xl leading-tight md:leading-[120px] lg:leading-[143px] text-center text-secondary font-medium font-cinzel"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -108,7 +108,7 @@ const AboutThird = () => {
 
       {/* Description Paragraph */}
       <motion.p
-        className="text-lg md:text-xl lg:text-2xl font-normal text-center"
+        className="text-lg md:text-xl lg:text-2xl font-normal text-center font-montserrat"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}

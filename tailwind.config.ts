@@ -10,12 +10,13 @@ export default {
     extend: {
       colors: {
         primary: "#D72638",
-        secondary: "#222222"
-
+        secondary: "#222222",
       },
       fontFamily: {
-        poppins: "var(--font-poppins)"
-      }
+        poppins: "var(--font-poppins)",
+        cinzel: "var(--font-cinzel)",
+        montserrat: "var(--font-montserrat)",
+      },
     },
   },
   plugins: [],

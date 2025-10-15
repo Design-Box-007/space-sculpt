@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { services } from "@/data/services";
 import { Service as ServiceType } from "@/types";
@@ -17,8 +17,8 @@ const componentMap = {
   Service4: dynamic(() => import("@/data/Services/Service4")),
   Service5: dynamic(() => import("@/data/Services/Service5")),
   Service6: dynamic(() => import("@/data/Services/Service6")),
+  Service7: dynamic(() => import("@/data/Services/Service7")),
 };
-
 
 const Service = () => {
   const { serviceName } = useParams();
@@ -31,7 +31,8 @@ const Service = () => {
 
   const { metatags, title, imgSrc } = ServiceData;
 
-  const ServiceComponent = componentMap[ServiceData.component as keyof typeof componentMap];
+  const ServiceComponent =
+    componentMap[ServiceData.component as keyof typeof componentMap];
 
   if (!ServiceComponent) return <>Service NOT FOUND</>;
 
@@ -39,11 +40,15 @@ const Service = () => {
 
   return (
     <section className="p-[10px] md:p-3 lg:p-5 font-poppins mt-[100px] space-y-10">
-      <BLogHeader title={title} imgAlt={metatags.imageAlts[0]} imgSrc={imgSrc} />
+      <BLogHeader
+        title={title}
+        imgAlt={metatags.imageAlts[0]}
+        imgSrc={imgSrc}
+      />
       <Suspense fallback={<p>Loading Service...</p>}>
         <ServiceComponent />
       </Suspense>
-      <ServiceCTA/>
+      <ServiceCTA />
       {schemaMarkup && (
         <script
           type="application/ld+json"

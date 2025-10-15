@@ -10,7 +10,7 @@ const ServiceGalleryGrid = () => {
   return (
     <section className="px-4 space-y-6 sm:space-y-8">
       <motion.h1
-        className="text-2xl md:text-7xl leading-tight sm:leading-[1.2] text-secondary font-medium font-cinzel"
+        className="text-3xl lg:text-5xl leading-tight sm:leading-[1.2] text-secondary font-medium font-cinzel"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.5 }}
@@ -23,8 +23,7 @@ const ServiceGalleryGrid = () => {
           viewport={{ once: true, amount: 0.5 }}
         >
           {"Where Design Meets"}
-        </motion.span>
-         {" "}
+        </motion.span>{" "}
         <motion.span
           className="inline-block text-primary"
           initial={{ opacity: 0 }}

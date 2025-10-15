@@ -17,6 +17,7 @@ const Home = () => {
         bgImage={assets.HomeHeroImage}
         ctaStatus={true}
         content=""
+        displayWhatsapp={true}
       />
       <About />
       <WhatWeOffer />

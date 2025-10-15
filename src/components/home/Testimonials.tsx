@@ -66,7 +66,7 @@ const Testimonials = () => {
         <div className="w-full lg:w-3/4 flex flex-col justify-between">
           {/* "What Our Clients" animates from left to right */}
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl text-black font-medium font-cinzel"
+            className="text-3xl md:text-5xl text-black font-medium font-cinzel"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.5 }}

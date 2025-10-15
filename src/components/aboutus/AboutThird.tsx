@@ -63,7 +63,7 @@ const AboutThird = () => {
     <section className="px-6 mb-10 space-y-5">
       {/* Heading */}
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl leading-tight md:leading-[120px] lg:leading-[143px] text-center text-secondary font-medium font-cinzel"
+        className="text-3xl md:text-5xl leading-tight md:leading-[120px] lg:leading-[143px] text-center text-secondary font-medium font-cinzel"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

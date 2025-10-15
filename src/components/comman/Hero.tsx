@@ -38,8 +38,9 @@ interface HeroProps {
   ctaLink?: string;
   ctaStatus?: boolean;
   bgImage: string;
+  displayWhatsapp?: boolean; // ✅ New prop
 }
-
+// Framer Motion Variants
 const headingVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -57,6 +58,7 @@ const Hero: React.FC<HeroProps> = ({
   ctaLink,
   ctaStatus = false,
   bgImage,
+  displayWhatsapp = false, // default false
 }) => {
   return (
     <section className="text-white w-full flex flex-col justify-center relative rounded-xl overflow-hidden min-h-screen max-[500px]:pt-[100px] p-8 sm:p-6 md:p-10 lg:p-12">
@@ -71,7 +73,7 @@ const Hero: React.FC<HeroProps> = ({
 
       <div className="text-left flex flex-col gap-6 sm:gap-4 md:gap-6 lg:gap-8">
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-7xl text-white font-medium capitalize font-cinzel"
+          className="text-2xl md:text-5xl lg:text-7xl text-white font-medium capitalize font-cinzel"
           dangerouslySetInnerHTML={{ __html: heading }}
           variants={headingVariants}
           initial="hidden"
@@ -87,7 +89,6 @@ const Hero: React.FC<HeroProps> = ({
           transition={{ duration: 1, delay: 0.3 }}
         />
 
-        {/* Conditionally render CTA button */}
         {ctaStatus && ctaName && ctaLink && (
           <a
             href={ctaLink}
@@ -103,19 +104,18 @@ const Hero: React.FC<HeroProps> = ({
         )}
       </div>
 
-      {/* <div className="hidden md:block sm:text-base md:text-lg sm:w-[250px] md:w-[300px] lg:w-[331px] text-left font-medium text-white border-b-primary border-b-2 border-solid absolute bottom-4 right-3">
-        Commercial Interior
-      </div> */}
-
-      <div className="absolute bottom-10 left-0 w-full flex flex-wrap justify-center items-center gap-4 px-4 text-center z-20">
-        {WHATSAPP_NUMBERS.map((number) => (
-          <WhatsappButton
-            key={number}
-            number={number}
-            message="Hi! I'm interested in your LED display solutions."
-          />
-        ))}
-      </div>
+      {/* ✅ Conditional WhatsApp buttons */}
+      {displayWhatsapp && (
+        <div className="absolute bottom-10 left-0 w-full flex flex-wrap justify-center items-center gap-4 px-4 text-center z-20">
+          {WHATSAPP_NUMBERS.map((number) => (
+            <WhatsappButton
+              key={number}
+              number={number}
+              message="Hi! I'm interested in your LED display solutions."
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 };

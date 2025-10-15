@@ -20,11 +20,11 @@ const GalleryMainSection = () => {
       : serviceCardGroups.filter((item) => item.serviceId === selectedService);
 
   return (
-    <section className="px-4  pt-10">
+    <section className="px-4 pt-10">
       {/* Responsive Heading */}
 
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-secondary text-center my-8 font-cinzel"
+        className="text-3xl md:text-5xl font-medium text-secondary text-center my-8 font-cinzel"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}

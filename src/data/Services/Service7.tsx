@@ -2,12 +2,12 @@ import Services from "@/components/service/service2";
 import React from "react";
 import { services } from "../services";
 
-export default function Service5() {
+export default function Service7() {
   return (
     <Services
-      heading={services[4].heading}
-      sections={services[4].sections}
-      section2={services[4].section2}
+      heading={services[6].heading}
+      sections={services[6].sections}
+      section2={services[6].section2}
     />
   );
 }

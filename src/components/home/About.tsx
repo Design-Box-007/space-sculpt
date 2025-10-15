@@ -34,7 +34,7 @@ const About = () => {
     "For over years, we’ve delivered high-quality interior solutions across the UAE. Recognized as one of Dubai’s top interior design companies, we craft living spaces that are both functional and visually captivating. With a diverse design portfolio, we tailor every project to suit individual tastes, from minimalist to eclectic. Our approach includes premium materials, custom solutions, and transparent communication throughout the process. We are committed to achieving exceptional results—on time and within budget.";
 
   return (
-    <section className="border-2 border-primary rounded-xl space-y-4 py-5 px-4 sm:py-6 sm:px-6 md:py-8 md:px-10 lg:py-10 lg:px-12 mt-10">
+    <section className="border-2 border-primary rounded-xl space-y-4 py-5 px-4 sm:py-6 sm:px-6 md:py-8 md:px-10 lg:py-10 lg:px-12 mt-10 shadow-lg">
       <motion.div
         className="text-lg sm:text-xl font-medium text-secondary w-full flex flex-row justify-between"
         variants={aboutUsVariant}
@@ -43,7 +43,7 @@ const About = () => {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1 }}
       >
-        <p className="text-5xl sm:text-6xl font-cinzel">About us</p>
+        <p className="text-3xl lg:text-5xl font-cinzel">About us</p>
         {/* <InfoIcon size={20} color="#D72638" /> */}
       </motion.div>
 

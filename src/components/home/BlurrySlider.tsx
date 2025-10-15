@@ -23,7 +23,7 @@ const BlurrySlider = () => {
       <section className="px-4 md:px-8 lg:px-16 overflow-hidden flex flex-col justify-center min-h-[50vh]">
         {/* Title */}
         <motion.h4
-          className="lg:text-3xl md:text-2xl text-xl font-semibold mb-6 sm:mb-4 text-center capitalize md:text-left font-cinzel italic"
+          className="text-3xl md:text-5xl font-medium mb-6 sm:mb-4 md:text-center capitalize font-cinzel"
           // initial={{ opacity: 1, y: -20 }}
           // // whileInView={{ opacity: 1, y: 0 }}
           // // viewport={{ once: true, amount: 0.5 }}
@@ -34,11 +34,14 @@ const BlurrySlider = () => {
         </motion.h4>
 
         {/* Clickable Content Below Title */}
-        <div className="mb-6 flex justify-center">
-          <span onClick={() => setIsModalOpen(true)} className="cursor-pointer p-3 shadow-2xl rounded-2xl border-2 text-xl text-primary">
+        {/* <div className="mb-6 flex justify-center">
+          <span
+            onClick={() => setIsModalOpen(true)}
+            className="cursor-pointer p-3 shadow-2xl rounded-2xl border-2 text-xl text-primary"
+          >
             Click to View Content
           </span>
-        </div>
+        </div> */}
 
         {/* Image Container */}
         <section className="flex w-full h-full justify-center border border-solid items-center relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl">

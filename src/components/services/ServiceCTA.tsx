@@ -21,7 +21,7 @@ const ServiceCTA = () => {
             <span className="bg-primary rounded-full p-2 sm:p-3">
               <ArrowRight size={40} className="text-white -rotate-45" />
             </span>
-            <span className="text-primary text-xl md:text-2xl lg:text-4xl font-medium font-montserrat">
+            <span className="text-primary  md:text-2xl lg:text-4xl font-medium font-montserrat">
               Get Free Consultation
             </span>
           </button>

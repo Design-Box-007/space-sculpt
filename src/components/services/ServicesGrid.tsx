@@ -11,7 +11,7 @@ const ServicesGrid = () => {
     <section className="px-4 py-16 sm:py-20 space-y-10 sm:space-y-14">
       <div className="space-y-4 sm:space-y-5">
         <motion.h2
-          className="text-3xl lg:text-5xl font-medium font-cinzel"
+          className="text-2xl md:text-3xl lg:text-5xl font-medium font-cinzel"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
@@ -20,7 +20,7 @@ const ServicesGrid = () => {
           Interior Fit Out Services by Dubai’s Best Interior Design Company
         </motion.h2>
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl leading-relaxed sm:leading-[43px] font-normal font-montserrat"
+          className="md:text-2xl leading-relaxed sm:leading-[43px] font-normal font-montserrat"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}

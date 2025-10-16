@@ -22,7 +22,7 @@ const AboutSecond = () => {
 
       {/* Description */}
       <motion.p
-        className="font-normal text-xl md:text-2xl text-center md:text-left font-montserrat"
+        className="description"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
@@ -60,7 +60,7 @@ const AboutSecond = () => {
           alt="Rich and Modern red background that is used as background to place the text over it."
           width={1360}
           height={796}
-          className="w-full aspect-[16/9] absolute top-0 left-0 right-0 z-10 object-cover object-center"
+          className="w-full h-full absolute top-0 left-0 right-0 z-10 object-cover object-center"
         />
 
         {/* Content Box */}
@@ -78,7 +78,7 @@ const AboutSecond = () => {
 
           {/* Founded paragraph (fade in only) */}
           <motion.p
-            className="font-normal text-lg md:text-[22px] md:leading-[29px] italic text-center md:text-left font-montserrat"
+            className="font-normal text-lg md:text-[22px] md:leading-[29px] italic description"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -91,7 +91,7 @@ const AboutSecond = () => {
 
           {/* Quote (bottom to top) */}
           <motion.p
-            className="font-normal text-xl md:text-3xl text-primary italic text-center md:text-left font-montserrat"
+            className="text-primary italic description"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}

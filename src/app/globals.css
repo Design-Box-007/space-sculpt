@@ -65,3 +65,11 @@ body {
 .service-blog {
   @apply px-4 pb-6 pt-2 w-full mx-auto space-y-6;
 }
+
+.heading {
+  @apply text-3xl lg:text-5xl font-cinzel font-medium;
+}
+
+.description {
+  @apply text-lg sm:text-xl md:text-2xl font-normal font-montserrat;
+}

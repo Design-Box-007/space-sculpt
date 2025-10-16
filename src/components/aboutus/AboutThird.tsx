@@ -63,7 +63,7 @@ const AboutThird = () => {
     <section className="px-6 space-y-3">
       {/* Heading */}
       <motion.h1
-        className="text-3xl md:text-5xl text-center text-secondary font-medium font-cinzel"
+        className="heading text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -108,7 +108,7 @@ const AboutThird = () => {
 
       {/* Description Paragraph */}
       <motion.p
-        className="text-lg md:text-xl lg:text-2xl font-normal text-center font-montserrat"
+        className="description text-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}

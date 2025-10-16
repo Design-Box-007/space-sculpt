@@ -3,7 +3,7 @@ import { Assets } from "@/types"
 const assets: Assets = {
     Logo: '/logo.svg',
     PhoneIcon: '/images/phone-icon.svg',
-    HomeHeroImage: "/images/hero1.png",
+    HomeHeroImage: "/new-images/home-page-image.jpg",
     HomeAboutImage: "/images/home-about.png",
     FooterImage: '/images/footer-image.png',
 

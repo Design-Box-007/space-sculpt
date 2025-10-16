@@ -46,7 +46,7 @@ const WhatWeOffer = () => {
   return (
     <section className="px-4">
       <motion.h1
-        className="text-3xl lg:text-5xl font-medium text-left font-cinzel"
+        className="heading"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.5 }}

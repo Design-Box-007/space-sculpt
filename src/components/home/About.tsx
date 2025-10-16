@@ -43,7 +43,7 @@ const About = () => {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1 }}
       >
-        <p className="text-3xl lg:text-5xl font-cinzel">About us</p>
+        <p className="heading">About us</p>
         {/* <InfoIcon size={20} color="#D72638" /> */}
       </motion.div>
 
@@ -61,7 +61,7 @@ const About = () => {
 
         <div className="flex flex-col gap-2 justify-around flex-1 text-justify">
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl font-normal text-secondary font-montserrat"
+            className="description"
             variants={paragraphVariant}
             initial="hidden"
             whileInView="visible"
@@ -74,7 +74,7 @@ const About = () => {
           <AnimatePresence>
             {isExpanded && (
               <motion.div
-                className="text-lg sm:text-xl md:text-2xl font-normal text-secondary overflow-hidden font-montserrat"
+                className="description overflow-hidden"
                 variants={expandVariant}
                 initial="hidden"
                 animate="visible"

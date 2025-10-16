@@ -23,7 +23,7 @@ const BlurrySlider = () => {
       <section className="px-4 md:px-8 lg:px-16 overflow-hidden flex flex-col justify-center min-h-[50vh]">
         {/* Title */}
         <motion.h4
-          className="text-xl md:text-5xl font-medium mb-6 sm:mb-4 md:text-center capitalize font-cinzel"
+          className="heading capitalize mb-5 text-center"
           // initial={{ opacity: 1, y: -20 }}
           // // whileInView={{ opacity: 1, y: 0 }}
           // // viewport={{ once: true, amount: 0.5 }}

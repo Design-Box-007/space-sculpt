@@ -30,10 +30,10 @@ const Footer = () => {
                 {/* logo */}
                 <div className="text-xl font-bold text-white flex flex-row items-center gap-2">
                   <Image
-                    src={"/Space&Sapnatech_PNG.png"}
+                    src={assets.Logo}
                     alt="logo"
                     width={200}
-                    height={83} 
+                    height={83}
                     className="md:w-[220px] w-[120px] brightness-150"
                   />
                   {/* <span>

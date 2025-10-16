@@ -73,7 +73,7 @@ const Hero: React.FC<HeroProps> = ({
 
       <div className="text-left flex flex-col gap-6 sm:gap-4 md:gap-6 lg:gap-8">
         <motion.h1
-          className="text-2xl md:text-5xl lg:text-7xl text-white font-medium capitalize font-cinzel"
+          className="text-3xl md:text-5xl lg:text-7xl text-white font-medium capitalize font-cinzel"
           dangerouslySetInnerHTML={{ __html: heading }}
           variants={headingVariants}
           initial="hidden"

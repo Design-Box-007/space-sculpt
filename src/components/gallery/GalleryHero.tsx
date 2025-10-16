@@ -21,7 +21,7 @@ const GalleryHero = () => {
         {/* Heading centered */}
 
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl leading-tight font-medium text-center px-4 sm:px-8 font-cinzel"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl leading-tight font-medium  px-4 sm:px-8 font-cinzel"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}

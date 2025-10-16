@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   other: {
     "google-site-verification": "FHO8xfEZFaPS-_zxN7BcW0EB4m-i6UzKqVhcJzO1qUg",
   },
-  themeColor: "#000000",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",
@@ -33,6 +32,12 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
 };
+ 
+export function generateViewport() {
+  return {
+    themeColor: "#000000",
+  };
+}
 
 // Load Satoshi Variable Font
 const satoshi = localFont({

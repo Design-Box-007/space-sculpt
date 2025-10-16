@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -12,10 +12,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const pathname = usePathname();
-
-  const NavbarBackgroundImage = navLinks.find((link) =>
-    pathname.startsWith(link.link)
-  )?.bgImage as string;
+  const NavbarBackgroundImage = [...navLinks]
+    .sort((a, b) => b.link.length - a.link.length)
+    .find((link) =>
+      link.link === "/" ? pathname === "/" : pathname.startsWith(link.link)
+    )?.bgImage as string;
 
   // Function to close the mobile menu
   const onLinkClicked = () => {
@@ -46,7 +47,7 @@ const Navbar = () => {
           onClick={onLinkClicked}
         >
           <Image
-            src={"/Space&Sapnatech_PNG.png"}
+            src={assets.Logo}
             alt="logo"
             width={200}
             height={83}

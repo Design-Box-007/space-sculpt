@@ -1,7 +1,7 @@
 import { Assets } from "@/types"
 
 const assets: Assets = {
-    Logo: '/logo.svg',
+    Logo: '/Space&Sapnatech_SVG.svg',
     PhoneIcon: '/images/phone-icon.svg',
     HomeHeroImage: "/new-images/home-page-image.jpg",
     HomeAboutImage: "/images/home-about.png",
@@ -42,16 +42,16 @@ const assets: Assets = {
 
     // about us
 
-    aboutHero: "/images/abouthero.png",
+    aboutHero: "/new-images/elegant-living-room-with-beige-sofa-floral-wall-decor.jpg",
     about2: "/images/about2.png",
     divider: "/images/divider.png",
 
     // services
 
-    servicesHero: "/images/servicesHero.png",
+    servicesHero: "/new-images/living-room-with-white-couch-wooden-table.jpg",
 
     // gallery images
-    galleryHero: "/images/galleryHeroImage2.jpg",
+    galleryHero: "/new-images/minimalist-winter-joy-pure-white-space-with-holiday-accents.jpg",
     classicRenovation: "/images/gallery/classic-renovation.png",
     customSignage: "/images/gallery/custom-signage.png",
     minimalisticOfficeMakeover: "/images/gallery/minimalistic-office-makeover.png",
@@ -81,12 +81,12 @@ const assets: Assets = {
 
     // contact us 
 
-    contactHero1: "/images/contactusHero1.png",
+    contactHero1: "/new-images/three-vases-table-room-with-window-them.jpg",
     contactHero2: "/images/contactusHero2.png",
 
     // blogspage
 
-    blogsHeroImage: "/images/blogsHeroImage.png",
+    blogsHeroImage: "/new-images/realistic-3d-render-blank-empty-space-round-white-beige-sideboard-with-sunlight-dry-grass.jpg",
 
 
 

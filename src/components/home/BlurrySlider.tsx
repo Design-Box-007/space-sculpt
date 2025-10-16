@@ -83,7 +83,7 @@ const BlurrySlider = () => {
                     alt="gallery-image"
                     width={500}
                     height={500}
-                    className="w-full md:aspect-[21/7] h-full object-cover rounded-xl sm:rounded-2xl md:rounded-3xl"
+                    className="w-full md:h-[400px] h-[300px] object-cover rounded-xl sm:rounded-2xl md:rounded-3xl"
                     loading="lazy"
                   />
                 </motion.div>

@@ -44,7 +44,7 @@ const ServiceCard: React.FC<
 
 const WhatWeOffer = () => {
   return (
-    <section className="py-10 px-4">
+    <section className="px-4">
       <motion.h1
         className="text-3xl lg:text-5xl font-medium text-left font-cinzel"
         initial={{ opacity: 0, x: -50 }}

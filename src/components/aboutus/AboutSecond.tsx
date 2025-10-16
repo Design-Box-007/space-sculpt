@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const AboutSecond = () => {
   return (
-    <section className="px-4 py-10 space-y-5 md:space-y-7">
+    <section className="px-4 space-y-5 md:space-y-7">
       {/* Title */}
       {/* <motion.h2
         className="font-bold text-4xl md:text-6xl leading-tight text-center md:text-left"

@@ -10,7 +10,7 @@ import TextMarquee from "./TextMarquee";
 
 const Home = () => {
   return (
-    <section className="p-[10px] md:p-3 lg:p-5 overflow-hidden">
+    <section className="p-[10px] md:p-3 lg:p-5 overflow-hidden space-y-12">
       <Hero
         heading="Experience UAE’s premium <span class='text-primary'>interior design</span> solutions with Spacesculpt Interiors & Sapnatech Interiors"
         ctaLink="/contact"

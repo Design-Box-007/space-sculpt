@@ -61,7 +61,7 @@ const TestimonialGrid: React.FC<{ testimonials: Testimonial[] }> = ({
 
 const Testimonials = () => {
   return (
-    <section className="px-4 py-20">
+    <section className="px-4">
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="w-full lg:w-3/4 flex flex-col justify-between">
           {/* "What Our Clients" animates from left to right */}

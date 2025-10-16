@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const ServiceCTA = () => {
   return (
-    <section className="relative overflow-hidden px-4 py-10 bg-white">
+    <section className="relative overflow-hidden px-4 bg-white">
       <div className="relative z-10 bg-primary text-white font-medium px-6 py-12 rounded-[40px] space-y-8">
         <h1 className="text-xl md:text-3xl lg:text-5xl leading-tight font-cinzel">
           Where Vision Becomes Reality

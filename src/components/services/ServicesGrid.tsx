@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const ServicesGrid = () => {
   return (
-    <section className="px-4 py-16 sm:py-20 space-y-10 sm:space-y-14">
+    <section className="px-4 space-y-10">
       <div className="space-y-4 sm:space-y-5">
         <motion.h2
           className="text-2xl md:text-3xl lg:text-5xl font-medium font-cinzel"

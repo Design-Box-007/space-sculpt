@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const ServiceGalleryGrid = () => {
   return (
-    <section className="px-4 space-y-6 sm:space-y-8">
+    <section className="px-4 space-y-5">
       <motion.h1
         className="text-3xl lg:text-5xl leading-tight sm:leading-[1.2] text-secondary font-medium font-cinzel"
         initial={{ opacity: 0 }}

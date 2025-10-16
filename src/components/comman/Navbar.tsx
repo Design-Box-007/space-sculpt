@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -46,11 +46,11 @@ const Navbar = () => {
           onClick={onLinkClicked}
         >
           <Image
-            src={assets.Logo}
+            src={"/Space&Sapnatech_PNG.png"}
             alt="logo"
             width={200}
             height={83}
-            className=""
+            className="md:w-[120px] w-[80px] brightness-200"
           />
           {/* <span>
                         <span className="text-primary">S</span>pace <span className="text-primary">S</span>culp<span className="text-primary">t</span>

@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const TextMarquee: React.FC = () => {
   return (
-    <div className="flex flex-col gap-8 py-10 overflow-hidden rotate-[5deg]">
+    <div className="flex flex-col gap-8 overflow-hidden rotate-[5deg]">
       {/* First marquee: Scrolls from left to right */}
       <Marquee
         direction="left"

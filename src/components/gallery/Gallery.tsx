@@ -6,7 +6,7 @@ import GalleryMainSection from './GalleryMainSection'
 
 const Gallery = () => {
     return (
-        <section className='p-[10px] md:p-3 lg:p-5'>
+        <section className='p-[10px] md:p-3 lg:p-5 space-y-12'>
             <GalleryHero />
             <GalleryMainSection />
             <Testimonials />

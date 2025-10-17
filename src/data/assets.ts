@@ -5,7 +5,7 @@ const assets: Assets = {
     PhoneIcon: '/images/phone-icon.svg',
     HomeHeroImage: "/new-images/home-page-image.jpg",
     HomeAboutImage: "/images/home-about.png",
-    FooterImage: '/images/footer-image.png',
+    FooterImage: '/new-images/elegant-living-room-with-beige-sofa-floral-wall-decor.jpg',
 
     // projects
     commerceSpace: "/images/projects2/commercial.jpg",

@@ -1,6 +1,5 @@
 "use client";
 
-import assets from "@/data/assets";
 import Image from "next/image";
 import React, { useState } from "react";
 import { FaHome } from "react-icons/fa";
@@ -8,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const BlurrySlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Each item can have either an image or a video
   const media = [

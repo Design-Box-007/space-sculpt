@@ -3,7 +3,7 @@ import { Assets } from "@/types";
 const assets: Assets = {
   Logo: "/Space&Sapnatech_PNG.png",
   PhoneIcon: "/images/phone-icon.svg",
-  HomeHeroImage: "/new-images/home-page-image.jpg",
+  HomeHeroImage: "/new-images/home-hero.jpg",
   HomeAboutImage: "/images/home-about.png",
   FooterImage:
     "/new-images/elegant-living-room-with-beige-sofa-floral-wall-decor.jpg",

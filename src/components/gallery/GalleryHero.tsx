@@ -15,7 +15,7 @@ const GalleryHero = () => {
         width={1153}
         height={641}
         alt="bg"
-        className="absolute inset-0 w-full h-full object-cover brightness-[0.7] -z-10"
+        className="absolute inset-0 w-full h-full object-cover brightness-[0.9] -z-10"
       />
       <div className="flex flex-col flex-1 justify-center items-start gap-4">
         {/* Heading centered */}

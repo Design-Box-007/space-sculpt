@@ -6,7 +6,7 @@ import { contactUsAddress, contactUsAddressLink, contactUsEmail, contactUsPhoneN
 
 const ContactHero = () => {
   return (
-    <section className="relative text-white w-full flex flex-col justify-end rounded-xl overflow-hidden min-h-screen px-2 sm:px-4 md:px-8 lg:px-12 py-12 pt-[120px]">
+    <section className="relative text-white w-full flex flex-col justify-end rounded-xl overflow-hidden min-h-screen px-2 sm:px-4 md:px-8 lg:px-12 py-12 pt-[150px]">
       {/* Background Image */}
       <Image
         loading="eager"

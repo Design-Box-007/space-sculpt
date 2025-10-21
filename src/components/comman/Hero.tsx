@@ -68,7 +68,7 @@ const Hero: React.FC<HeroProps> = ({
         width={1153}
         height={641}
         alt="background"
-        className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.6] top-0 right-0 left-0 object-cover"
+        className="-z-10 h-full rounded-3xl absolute w-full brightness-[0.8] top-0 right-0 left-0 object-cover"
       />
 
       <div className="text-left flex flex-col gap-6 sm:gap-4 md:gap-6 lg:gap-8">

@@ -29,7 +29,7 @@ const Navbar = () => {
         NavbarBackgroundImage ? "absolute" : "static w-full"
       }`}
     >
-      <section className="flex items-center justify-between p-[10px] md:p-3 lg:p-5 rounded-full relative overflow-hidden">
+      <section className="flex items-center justify-between py-1 px-5 rounded-full relative overflow-hidden">
         {NavbarBackgroundImage && (
           <Image
             loading="eager"
@@ -37,7 +37,7 @@ const Navbar = () => {
             width={1153}
             height={641}
             alt="bg"
-            className="-z-10 w-full absolute brightness-[0.7] top-0 right-0 left-0 object-cover"
+            className="-z-10 w-full absolute brightness-[0.8] top-0 right-0 left-0 object-cover"
           />
         )}
 
